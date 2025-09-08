@@ -93,15 +93,30 @@ i {
 [data-title]:hover::after {
     content: attr(data-title);
     position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
     font-size: 12px;
-    background: #F10D0D;
+    line-height: 1.2;
     color: #fff;
-    padding: 0.2em 0.3em;
-    border-radius: 0.2em;
-    text-transform: capitalize;
-    bottom: -25px;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 6px 8px;
+    border-radius: 6px;
+    white-space: nowrap;
     width: max-content;
-    left: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+    text-transform: none;
+}
+
+[data-title]:hover::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.85) transparent transparent transparent;
+    z-index: 9999;
 }
 
 .svg-icon {
