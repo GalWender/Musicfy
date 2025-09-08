@@ -1,0 +1,34 @@
+// COLOR PALETTE
+$clr1: #fff;
+$clr2: #222;
+$clr3: #000;
+$clr4: #dbdbdb;
+$clr5: #2d2d2d;
+$clr6: #0d99ff;
+$bg-base: #121212 ;
+
+$br: 0.5em;
+
+$text: #303133;
+$grad: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
+ radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+ radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+ radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+ radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+ radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+ radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+ linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+
+$bs: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+
+// LAYOUT
+$layoutPadding: 20px;
+
+// LAYOUT BREAKPOINTS
+$break-narrow: 500px;
+$break-normal: 700px;
+$break-wide: 1920px;
+
+$padded-break-narrow: $break-narrow + $layoutPadding * 2;
+$padded-break-normal: $break-normal + $layoutPadding * 2;
+$padded-break-wide: $break-wide + $layoutPadding * 2;

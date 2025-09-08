@@ -1,0 +1,81 @@
+.user-preview {
+ grid-auto-flow: column;
+ place-items: start;
+ place-content: start;
+ cursor: pointer;
+ .gradient-wrapper {
+  background: $grad;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  padding: 0.1em;
+
+  // what happens when the user has no story is
+  &.disabled {
+   background: $clr4;
+  }
+ }
+ img {
+  box-sizing: content-box;
+  // border: 1px solid $grad;
+  box-shadow: inset 0 0 1px 2px $clr1;
+  padding: 2px;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+ }
+
+ // when the user-preview is in the app-nav
+ &.nav {
+  .gradient-wrapper {
+   background: none;
+  }
+  img {
+   box-sizing: content-box;
+   border: none;
+
+   height: 24px;
+   width: 24px;
+  }
+  &:hover {
+   transform: scale(1.1);
+  }
+ }
+
+ // when the user-preview is in the story-list
+ &.story {
+  img {
+   box-sizing: content-box;
+   border: none;
+   padding: 2px;
+   height: 56px;
+   width: 56px;
+  }
+ }
+ &.user-area {
+  img {
+   box-sizing: content-box;
+   border: none;
+
+   height: 84px;
+   width: 84px;
+  }
+  .gradient-wrapper {
+   padding: 0.2em;
+  }
+ }
+ &.story-on {
+  background: none;
+  img {
+   box-sizing: content-box;
+   border: none;
+   padding: 2px;
+   height: 32px;
+   width: 32px;
+  }
+  .gradient-wrapper {
+   background: none;
+  }
+ }
+}

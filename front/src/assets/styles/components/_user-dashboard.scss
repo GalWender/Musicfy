@@ -1,0 +1,18 @@
+.dashboard-container {
+ grid-auto-flow: column;
+ align-content: center;
+ justify-items: center;
+ text-align: center;
+ border-top: 1px solid $clr4;
+ p {
+  margin: 0;
+  &.counter {
+   font-size: 1rem;
+   font-weight: 700;
+  }
+  &.title {
+   font-size: 0.8rem;
+   font-weight: lighter;
+  }
+ }
+}

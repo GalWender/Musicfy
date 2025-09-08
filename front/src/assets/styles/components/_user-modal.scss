@@ -1,0 +1,27 @@
+.user-modal{
+    position: absolute;
+    transform: translate3d(-15px, 35px, 0px);
+    z-index: 1;
+    inset: 0px 0px auto auto;
+    max-width: 350px;
+    min-width: 160px;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(179, 179, 179);
+    background-color: rgb(40, 40, 40);
+    box-shadow: 0 16px 24px rgba(0,0,0,.3), 0 6px 8px rgba(0,0,0,.2);
+
+    &>* {
+        text-align: start;
+        border: 0;
+        border-radius: 2px;
+        height: 44px;
+        padding: 12px;
+    
+        &:hover{
+            background-color: hsla(0,0%,100%,.1);
+            cursor: pointer;
+        }
+    }
+}

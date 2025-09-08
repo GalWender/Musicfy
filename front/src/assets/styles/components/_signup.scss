@@ -1,0 +1,113 @@
+.signup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 450px;
+    margin: 0px auto;
+    padding-bottom: 130px;
+    color: $clr1;
+
+    .header{
+        padding: 40px 0px 32px;
+        display: flex;
+        flex-direction: column;
+        .logo{
+            display: flex;
+            margin: 0 auto;
+            text-align: center;
+            align-items: center;
+            font-size: 15px;
+            gap: 5px;
+
+            svg{
+                height: 40px;
+                width: 40px;
+            }
+        }
+
+        .header-txt{
+            margin-top: 40px;
+            text-align: center;
+            line-height: 36px;
+            letter-spacing: -0.04em;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    }
+
+    .login-google{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: 2px solid rgba(0, 0, 0);
+        border-radius: 500px;
+        color: $clr1;
+        height: 48px;
+        width: 394px;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 22px;
+
+        padding-block: 7px;
+        padding-inline: 31px;
+        
+        span{
+            padding-left: 16px;
+            padding-right: 0px;
+        }
+        
+        &:hover{
+            scale: 1.05;
+        }
+    }
+
+    .or {
+        display: table;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 2px;
+        margin: 0px auto 1em;
+        color: rgb(127, 127, 127);
+        position: relative;
+        text-align: center;
+        width: 85%;
+
+        &::before {
+            border-top: 1px solid rgb(204, 204, 204);
+            content: "";
+            display: table-cell;
+            position: relative;
+            top: 0.8em;
+            width: 42%;
+        }
+
+        &::after {
+            border-top: 1px solid rgb(204, 204, 204);
+            content: "";
+            display: table-cell;
+            position: relative;
+            top: 0.8em;
+            width: 42%;
+        }
+    }
+
+    .login-navigate{
+
+        & span {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        .navigate{
+            color: rgb(29, 185, 84);
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .navigate:hover{
+            color: rgb(30, 215, 96);
+        }
+    }
+
+}

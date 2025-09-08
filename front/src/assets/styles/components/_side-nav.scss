@@ -1,0 +1,200 @@
+.side-nav-container {
+    background-color: #000000;
+    color: rgb(179, 179, 179);
+    padding-top: 22px;
+    display: flex;
+    flex-direction: column;
+
+    .logo {
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        padding: 0 24px;
+        margin-bottom: 18px;
+    }
+
+    .upper-container {
+        height: 233px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-categ {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding-inline: 24px;
+        cursor: pointer;
+        color: #fff;
+        opacity: .7;
+
+        .side-icon {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 2px;
+        }
+
+        &:hover {
+            opacity: 1;
+            transition: opacity 0.2s linear;
+        }
+
+        &.heart {
+            .side-icon {
+                background: linear-gradient(135deg, #450af5, #c4efd9);
+                text-align: center;
+                padding-top: 2%;
+            }
+        }
+
+        &.plus {
+            .side-icon {
+                color: #000;
+            }
+        }
+    }
+
+    .user-categ-container {
+        flex-grow: 1;
+        padding-block: 8px;
+        // Only show scrollbar when content overflows
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        // Hidden by default (shows on hover)
+        scrollbar-width: thin; /* Firefox */
+        scrollbar-color: transparent transparent; /* thumb track */
+
+        &::-webkit-scrollbar { /* WebKit */
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: transparent;
+            border-radius: 8px;
+            border: 2px solid transparent;
+            transition: background-color 150ms ease, opacity 150ms ease;
+            opacity: 0;
+        }
+
+        &:hover {
+            scrollbar-color: #5a5a5a transparent; /* Firefox on hover */
+            &::-webkit-scrollbar-thumb {
+                background-color: #3a3a3a;
+                opacity: 1;
+            }
+            &::-webkit-scrollbar-thumb:hover {
+                background-color: #1db954; /* accent on thumb hover */
+            }
+        }
+    }
+
+    .user-categ {
+        font-family: Circular, Circular-heb;
+        display: flex;
+        align-items: center; // vertically center icon and text
+        padding-inline: 24px;
+        width: 100%;
+        gap: 14px; // a bit more breathing room
+        color: #fff;
+        opacity: 0.7;
+        min-height: 44px; // taller touch target
+        padding-block: 6px; // subtle vertical padding
+        cursor: pointer;
+        border-radius: 6px; // rounding for hover/playing background
+        & p {
+            display: flex; // center equalizer inline with text
+            align-items: center;
+            gap: 6px;
+            height: fit-content;
+            flex: 1; // take remaining width for proper truncation
+            min-width: 0; // allow text to shrink for ellipsis
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        &:hover {
+            opacity: 1;
+        }
+        &.playing {
+            opacity: 1;
+            background: rgba(29, 185, 84, 0.08);
+            box-shadow: inset 3px 0 0 0 #1db954;
+            transition: background-color 150ms ease, box-shadow 150ms ease;
+
+            .svg-icon { color: #1db954; }
+            p { color: #fff; }
+        }
+        
+        .img-container {
+            align-self: center;
+            width: 32px;
+            height: 32px;
+            max-height: 100%;
+            max-width: 32px;
+            flex-shrink: 0; // don't shrink thumbnail
+            position: relative; // allow overlay positioning
+
+            .side-img {
+                width: 100%;
+                height: 100%;
+                border-radius: 4px;
+                object-fit: cover;
+                aspect-ratio: 1;
+            }
+
+            .playing-overlay {
+                position: absolute;
+                inset: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #1db954; // equalizer uses currentColor
+                background: rgba(0, 0, 0, 0.35);
+                border-radius: 4px;
+                pointer-events: none; // clicks pass through
+
+                .svg-icon svg {
+                    width: 14px;
+                    height: 14px;
+                }
+            }
+        }
+    }
+
+    .selected {
+        opacity: 1;
+    }
+
+    .plus {
+        margin-top: 24px;
+
+        i {
+            background-color: #fff;
+        }
+    }
+
+    hr {
+        background-color: #282828;
+        height: 1px;
+        margin-inline: 24px;
+        margin-top: 8px;
+        border: none;
+        box-shadow: linear-gradient(180deg, rgba(0, 0, 0, .7), transparent);
+    }
+
+    // Sidebar scrollbar visuals are now handled above with hover state
+
+    @include for-mobile-layout {
+        display: none;
+    }
+}
+
+// linear-gradient(135deg,#450af5,#c4efd9)

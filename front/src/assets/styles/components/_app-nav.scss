@@ -1,0 +1,40 @@
+nav.app-nav {
+ background-color: $clr1;
+ align-content: center;
+ align-items: center;
+ border-top: 1px solid $clr4;
+ .nav-container {
+  align-items: baseline;
+  grid-auto-flow: column;
+  justify-content: space-evenly;
+ }
+
+ .nav-container {
+  i {
+   cursor: pointer;
+  }
+  .router-link-active.router-link-exact-active {
+   svg.home {
+    path {
+     fill: black;
+    }
+   }
+   svg.messenger {
+    path.outer {
+     fill: black;
+    }
+    path.inner {
+     fill: #fff;
+    }
+   }
+   svg.new-post {
+    path.outer {
+     fill: black;
+    }
+    line {
+     stroke: #fff;
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,96 @@
+.app-modal {
+ border: none;
+ // box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+ min-width: 300px;
+ height: 400px;
+ width: 350px;
+ border-radius: 1em;
+ padding: 0;
+
+ .close-btn {
+  @include close-modal-btn;
+ }
+ h1 {
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5em 0;
+  border-bottom: 1px solid #dbdbdb;
+ }
+ form {
+  transform: translateY(50%);
+  place-items: center;
+  input[type="file"] {
+   display: none;
+  }
+  label {
+   @include app-btn(7px, 16px);
+   border-radius: 8px;
+  }
+ }
+ &::backdrop {
+  background-color: rgba(0, 0, 0, 0.67);
+ }
+
+ &.editor {
+  display: grid;
+  width: 90%;
+  height: 80%;
+  .img-edit {
+   place-items: center;
+   padding: 0 1em;
+   width: 100%;
+   img {
+    width: 100%;
+    // height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+   }
+   form.editor-form {
+    text-align: center;
+    transform: translate(0);
+    // background: lightcoral;
+    width: 100%;
+    > * {
+     width: 100%;
+    }
+    textarea,
+    input[type="text"] {
+     padding: 0.5em;
+     border: 1px solid $clr4;
+    }
+    input[type="text"] {
+     width: 100%;
+    }
+    .post-info {
+     grid-template-columns: 1fr 32px;
+     padding: 1em;
+     > * {
+      grid-area: 1;
+     }
+    }
+    // TODO: better mixin
+    button {
+     @include app-btn();
+     border-radius: $br;
+     max-width: 50%;
+     width: 30%;
+    }
+    padding-bottom: 1em;
+   }
+   display: grid;
+  }
+  &::-webkit-scrollbar {
+   width: 1em;
+   display: none;
+  }
+
+  &::-webkit-scrollbar-track {
+   display: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+   background: none;
+  }
+ }
+}

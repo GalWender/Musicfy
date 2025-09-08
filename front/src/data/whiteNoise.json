@@ -1,0 +1,704 @@
+{
+    "id": "37i9dQZF1DWWQRwui0ExPn",
+    "tracks": [{
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Night Train",
+            "artist": "Katashi Kaitō",
+            "album": "Night Train",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273e7cdf596237e05fb0733eec6"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Delight",
+            "artist": "Mad Keys",
+            "album": "Delight",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b27329d542f7bdb9019ff918aaa0"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Morning Sunset",
+            "artist": "Ours Samplus",
+            "album": "Bepolar",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273ca7dba423df8a5639c4efa6f"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "The Hommage",
+            "artist": "Knowsum",
+            "album": "The Hommage",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b27305702b6ec2d32dc98f752d43"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Playdoh",
+            "artist": "Milo 3",
+            "album": "Playdoh",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b27341134dd6f411c3081b522959"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Han",
+            "artist": "Sawibeatz",
+            "album": "Han",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2731d2b40be79fc9c4189f63f28"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Misty",
+            "artist": "Goson",
+            "album": "Misty",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2736c7ab6c0e9dd12b2fd4ff13c"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Quite",
+            "artist": "Fed Nance",
+            "album": "Quite",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273c6b389c57c37ad5de5e1ae21"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Photosynthesis",
+            "artist": "Eu93ne",
+            "album": "Photosynthesis",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273a11a5ad7edf3e3110ecc4e93"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Foreplay",
+            "artist": "Wibke Komi",
+            "album": "Foreplay",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2736191578aeebfa75bca9e6395"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Missed Train",
+            "artist": "Sad Eyz",
+            "album": "Missed Train",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273c76e544ad32911c933f51e11"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Monkman",
+            "artist": "Gesmis",
+            "album": "Monkman",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273c8067ca326d8716ab8056027"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Summer Bustle",
+            "artist": "Frances The Mute",
+            "album": "Summer Bustle",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273204de6c3d5e85ad9e3f3493c"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Slow Walker",
+            "artist": "Wishes and Dreams",
+            "album": "Slow Walker",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b27344a352f5a58f9e832c16782c"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Bahar 1402",
+            "artist": "Farhot",
+            "album": "Nowroz 1402",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273373c45c7cf44e961d2454f07"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Forget about larry",
+            "artist": "Calm Like Carl",
+            "album": "Forget about larry",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2736e15e626a7d523f0f70c5c63"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Reel to Real",
+            "artist": "M.I Hakone",
+            "album": "Reel to Real",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273f3f3a3b7687ecf2abd7a4610"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "In The Woods",
+            "artist": "Oslo",
+            "album": "In The Woods",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273aeac920cc0b753ae8b5f512a"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "My Friends",
+            "artist": "Bird Svensøn",
+            "album": "My Friends",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273002d11a47769e44dd50f50f9"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Like Water",
+            "artist": "Herr Kaschke",
+            "album": "Like Water",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2739af893c963a02eda0f055a70"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Sweetheart Saga",
+            "artist": "Eazy Lotus",
+            "album": "Sweetheart Saga",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2735f5148d49712d4bdee291991"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Color Fusion",
+            "artist": "mädmäx",
+            "album": "Color Fusion",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273b0631ad931a6880d806dd6ee"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Oneformybrother",
+            "artist": "Midan",
+            "album": "Lost & Found",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2738f39fe752adb6d139be08188"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "wonderland",
+            "artist": "Behind Clouds",
+            "album": "Broken Clocks And Still Time",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273188cfda421e0039d2e4a5f2b"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Haye",
+            "artist": "Dabey",
+            "album": "Haye",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273345b28f91fbfce11e7461970"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Ancient forest",
+            "artist": "Knob Reflection",
+            "album": "Divine Author",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273a8bef833e451b55ab2f3d7c3"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Ten missed calls",
+            "artist": "Yazzuni",
+            "album": "Ten missed calls",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273b8afa3230043015057f72e7a"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Sleepy Friday",
+            "artist": "Birds Of The West",
+            "album": "Sleepy Friday",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273261d2898baaf580c74a97b9a"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "desert wind",
+            "artist": "keseki",
+            "album": "desert wind",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273e253a2e5da89e49a54eafe77"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Long nights",
+            "artist": "LOFI LAND",
+            "album": "Long nights",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273575aa8d27390bb4acaaaac8a"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Coconut Dreams",
+            "artist": "B-Side",
+            "album": "Coconut Dreams",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b27333bcd2791762ed2a5daae878"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Back In The Days",
+            "artist": "Florence Ada",
+            "album": "Back In The Days",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2732f8490038a842c7bac644db5"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Backpocket Breakdown",
+            "artist": "Burrito Eats",
+            "album": "Backpocket Breakdown",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2733fdfe31d8ffcf016ce98c90a"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Mango Mango",
+            "artist": "Yami Maho",
+            "album": "Mango Mango",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273b5b8075013c63f29e4314294"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Ukiyo",
+            "artist": "ONO1",
+            "album": "Ukiyo",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273f7d41fa1865d7c0e8f2f1514"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "California Dreaming",
+            "artist": "BiRdy SanJazz",
+            "album": "California Dreaming",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2738687b1c38d108241a55ad424"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "oui - lofi",
+            "artist": "lonelyboy",
+            "album": "chill vibes and lofi remixes with jeremih",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2739a57b26a0a6240c2652182da"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Mojito Pt. 2",
+            "artist": "SP-Mato",
+            "album": "Mojito Pt. 2",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b27321287727a50c664185e26eaa"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "MeBo",
+            "artist": "Fid Mella",
+            "album": "MeBo",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273f4b897c6d3bcdc8ac8e2fbe2"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Skating",
+            "artist": "Gabb.",
+            "album": "Skating",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b27393cf58d30af907334db648fc"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Mandala",
+            "artist": "Koralle",
+            "album": "Mandala",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273109f2e29763131f9e6a7e99e"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Heavy Rain",
+            "artist": "Bayek",
+            "album": "Heavy Rain",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273c5b75f7d56839914383932cc"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "My Cat",
+            "artist": "Kasimir",
+            "album": "My Cat",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273f520af7101cf850a4ddb65a0"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Poolside",
+            "artist": "Calvin Bennett",
+            "album": "Poolside",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273b129063041c901408a3eaa11"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Flower Pot",
+            "artist": "SoFo",
+            "album": "Flower Pot",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273162c3eb65e9eb94d4bea7ee8"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Boardwalk",
+            "artist": "Dpsht",
+            "album": "Boardwalk",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273f7de41cbc6d408fa272730bf"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Without You",
+            "artist": "Fed Nance",
+            "album": "Without You",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273f8bcbeb73230fe59e44faba8"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "E5",
+            "artist": "Boozoo Bajou",
+            "album": "E5",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2734388653a9661d62ef9068846"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Eyebrow",
+            "artist": "Dorothe Mosh",
+            "album": "Eyebrow",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b27371ebb8e785ffa38613817dfb"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Aces",
+            "artist": "Malia Løu",
+            "album": "Aces",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273f07d5de7e001ab3d6f35e5ca"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Sum' Jazz",
+            "artist": "POSTPARTUM.",
+            "album": "Sum' Jazz / The Realness",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273c6a2654f3f5193907fdadb9e"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Country House",
+            "artist": "KLIM",
+            "album": "Country House",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2730eeed6005ea6d3a400e21db8"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Post Truth",
+            "artist": "Beatific Vision",
+            "album": "Post Truth",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2731bbb7ac97dea69d973908b50"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "finesse",
+            "artist": "Papillon",
+            "album": "finesse",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b27385fdd9190095fae62e497657"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Solar",
+            "artist": "FLKS",
+            "album": "Solar",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2736e5d75d2ded7786f42cb6729"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Everything Is Calm",
+            "artist": "Wieland & Ulrich",
+            "album": "Everything Is Calm",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273871c01670c1de4336cb47c27"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Miss Blue",
+            "artist": "yoranda",
+            "album": "Miss Blue",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273de3f2ecf733dcd2ec8b8cf7f"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Soothing",
+            "artist": "KaspaHauser",
+            "album": "Soothing",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273927894ac1b955404d4a96fd6"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Palme",
+            "artist": "Bird Svensøn",
+            "album": "Palme",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2738f2d039547b19d7dc951083e"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Urban Jazz",
+            "artist": "KLIM",
+            "album": "Urban Jazz",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2738ed4fb3e25b6dd3c7381b650"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "serenity (I)",
+            "artist": "DRWN.",
+            "album": "serenity (I)",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b27365705d6c299cbf27e860575f"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Cold",
+            "artist": "Uli Tiro",
+            "album": "Cold",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2731fa564cfaef2534cee6a5fa0"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "disconnected",
+            "artist": "DAISI",
+            "album": "disconnected",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2730fc1bdd74a9f6715f73b6adb"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Silver Birch",
+            "artist": "Rudy Raw",
+            "album": "Silver Birch",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273d7b85af476297312cc580764"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Jamata",
+            "artist": "damaa.beats",
+            "album": "Jamata",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273891566c90393a2925a040709"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Blurred Lines",
+            "artist": "Mindscape",
+            "album": "Blurred Lines",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273a007e59363ea6ae8e8c4a7e3"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Long Story Short",
+            "artist": "DESH",
+            "album": "Long Story Short",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273895d19da7731c0f688ea3f74"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Morning Routine",
+            "artist": "MZERA",
+            "album": "Morning Routine",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2735f9608e906d8c5ce51555853"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Engraving",
+            "artist": "Codewav",
+            "album": "Engraving",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2735ee62ea7d94e90d88e16dce3"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Midnight Bumps",
+            "artist": "Ale Fillman",
+            "album": "Midnight Bumps",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273ab111462a3784f1f034ec2e8"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Tesoro",
+            "artist": "Sabato Scola",
+            "album": "Tesoro",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273ff1c58a16bf6623a0b905768"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Listen",
+            "artist": "Wibke Komi",
+            "album": "Listen",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2733890361a73ccbd72aa244ad2"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Downstream",
+            "artist": "Prime8",
+            "album": "Downstream",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b27340e8dab3b530d2b097b11cc4"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Balance",
+            "artist": "ONO1",
+            "album": "Balance",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273887bdcfeaa504f02a43d048c"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "G-Jazz",
+            "artist": "Grmmr.126",
+            "album": "G-Jazz",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2737afe2fff097d1e3478c4b8e1"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "written for you",
+            "artist": "Terce S.",
+            "album": "written for you",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b27320c3c1a3bcc78840fbc13ac4"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "mobility",
+            "artist": "Max Kellen",
+            "album": "mobility",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2730ed8cd37911223730149119d"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Wavy",
+            "artist": "Lazlow",
+            "album": "Wavy",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2734d9c2f57d2383a7c4d186599"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "In My Lifetime",
+            "artist": "SP-Mato",
+            "album": "In My Lifetime",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b27338d368502327475ad289cebb"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Silence",
+            "artist": "Cap Kendricks",
+            "album": "Silence",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2730aee813d8f32e7db6739d3f1"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Final Destination",
+            "artist": "Nuver",
+            "album": "Final Destination",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b27327d8df830b86e09d38158889"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Vibez Only",
+            "artist": "Otis Neon",
+            "album": "Vibez Only",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b27358d17e9b1a6e0b1a31567407"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "The Night of the Mammoth",
+            "artist": "Museoh",
+            "album": "The Night of the Mammoth",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273d3203ab058edc4a6815a6bb9"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Slide",
+            "artist": "Deauxnuts",
+            "album": "Slide",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273475234839d1de818d00e5956"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "beneath your feet",
+            "artist": "yoshi the brilliant",
+            "album": "beneath your feet / balcony falls",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273dc9a7e63110cacbb98a45206"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Sugar Trail",
+            "artist": "Inf",
+            "album": "Sugar Trail",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273280c6a017cc55f4154134879"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Mandy",
+            "artist": "Relyae",
+            "album": "Mandy",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b27364abddc5ebdafc0b515362d9"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Kebapland",
+            "artist": "Kevoe West",
+            "album": "Kebapland",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2734fb3bc349de89fd5fb8d3167"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Crocus",
+            "artist": "Elffire",
+            "album": "Crocus",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2738949ffb19196ed8bd00a89c7"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "What R U Takin'",
+            "artist": "Franky Newton",
+            "album": "What R U Takin'",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273cd0303413c99148bd56710de"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Integral JaZz",
+            "artist": "CrazyJaZz",
+            "album": "Integral JaZz",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273e9003811f3061eff9dd53370"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Second Chance",
+            "artist": "Saiko",
+            "album": "Second Chance",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2730e94fabe35d36c6dae96f314"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Jazzflava",
+            "artist": "Lamar Azul",
+            "album": "Jazzflava",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273351c28f9af849ac897a4c631"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Shards",
+            "artist": "Plusma",
+            "album": "Shards",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273e2321d1867bf24eaf1780019"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Calma",
+            "artist": "young.vishnu",
+            "album": "Calma",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273a534a6be15da3fe7e34efb91"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Kefee",
+            "artist": "Mindeliq",
+            "album": "Kefee",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2731a18ca4cf2bf7d6d160ca6ff"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Meadows",
+            "artist": "saaaz",
+            "album": "Meadows",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273b0b7d8007afae8402d296b63"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Nocturnal",
+            "artist": "Oilix",
+            "album": "Nocturnal",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273be0101b64361598d60594040"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Roadburn",
+            "artist": "Oslo",
+            "album": "Roadburn",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b273d1e13eed8ebd3ecb8ce66325"
+        },
+        {
+            "addedAt": "2023-05-18T16:00:29Z",
+            "title": "Waiting For Tea",
+            "artist": "Kasimir",
+            "album": "Waiting For Tea",
+            "imgUrl": "https://i.scdn.co/image/ab67616d0000b2739807f32491abbd532f8ed57c"
+        }
+    ]
+}

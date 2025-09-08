@@ -1,0 +1,40 @@
+.main-layout {
+    background-color: $bg-base;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 241px 1fr;
+    grid-template-rows: 64px 1fr 90px;
+    grid-template-areas: 'side main' 'side main' 'player player';
+    // overflow: hidden;
+    .header-container {
+        position: sticky;
+        right: 0;
+        left: 241px;
+        top: 0;
+    }
+    .side-nav-container {
+        grid-area: side;
+    }
+    .content-container {
+        grid-area: main;
+        overflow-y: scroll;
+    }
+    .player-container {
+        grid-area: player;
+    }
+
+    @include for-mobile-layout {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'main' 'main' 'player';
+        overflow: hidden;
+
+        .header-container{
+            left: 0;
+        }
+
+        .content-container {
+            max-height: 77vh;
+        }
+    }
+}

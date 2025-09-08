@@ -1,0 +1,44 @@
+.home-list{
+    width: 100%;
+    margin-bottom: 16px;
+    overflow: hidden;
+    .home-list-grid{
+        display: grid;
+        /* Fixed card width to prevent stretching when only a few items */
+        grid-template-columns: repeat(auto-fill, minmax(180px, 180px));
+        justify-content: start;
+        gap: 24px;
+    }
+
+    .home-list-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:end;
+        margin-bottom: 16px;
+        
+        .btn-header{
+            border: 1px solid $bg-base;
+            background-color: inherit;
+            color: #a7a7a7;
+            height: min-content;
+            padding: 0;
+            
+        }
+
+        .btn-header:hover{
+            border-bottom: 1px solid #a7a7a7;
+        }
+    }
+
+    @include for-mobile-layout {
+        height: 50vh;
+        .home-list-grid{
+            display: flex;
+            overflow-x: scroll;
+            height: 40vh;
+        }
+
+    }
+
+}

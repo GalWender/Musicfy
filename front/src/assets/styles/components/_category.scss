@@ -1,0 +1,25 @@
+.category{
+    .category-header{
+        height: clamp(220px, 28vh, 340px);
+        padding: 24px;
+        display: flex;
+        text-align: left;
+        align-items: flex-end;
+        min-height: 220px;
+        
+        h1{
+            font-weight: 900;
+            font-size: clamp(2.5rem, 6vw, 5rem);
+        }
+    }
+
+    .category-list{
+        display: grid;
+        /* Fixed-width cards, left-justified, avoid huge stretched items when few results */
+        grid-template-columns: repeat(auto-fill, minmax(180px, 180px));
+        justify-content: start;
+        gap: 24px;
+        padding: 0 32px;
+        padding-top: 24px;
+    }
+}

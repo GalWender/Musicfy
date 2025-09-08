@@ -1,0 +1,21 @@
+.mobile-navbar {
+    display: none;
+    height: 3rem;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    background-color: $clr3;
+
+    .btn-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 33.3%;
+        height: 3rem;
+    }
+
+
+    @include for-mobile-layout {
+        display: flex;
+    }
+}

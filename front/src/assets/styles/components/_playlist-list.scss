@@ -1,0 +1,35 @@
+.playlist-list {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 40px;
+
+    .playlist-list-table {
+        .table-header {
+            padding: 0 32px;
+            color: #b3b3b3;
+            height: 36px;
+            display: grid;
+            grid-template-areas: '1 2 3 4 5';
+            grid-template-columns: 16px 6fr 4fr 3fr minmax(120px, 1fr) 32px;
+            grid-gap: 16px;
+            align-content: center;
+            border-bottom: #b3b3b330 solid 0.8px;
+            margin-block-end: 11px;
+
+            &>:last-child {
+                padding-left: 0;
+                padding-right: 0;
+                justify-self: end;
+                text-align: right;
+            }
+        }
+    }
+
+    @include for-mobile-layout {
+        .playlist-list-table {
+            .table-header {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,137 @@
+.edit-modal {
+    position: absolute;
+    transform: translate(60%, 20%);
+    width: 524px;
+    height: 390px;
+    background-color: rgb(40, 40, 40);
+    z-index: 10;
+    border-radius: 8px;
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'contant contant'
+        'save'
+        'footer footer';
+    padding: 24px;
+
+    grid-template-rows: auto auto 60px min-content;
+
+    .edit-header {
+        display: flex;
+        justify-content: space-between;
+        margin-block-end: 24px;
+        align-items: center;
+
+        .header-txt {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .btn-close {
+            background-color: transparent;
+            border: none;
+            color: $clr1;
+            font-size: 16px;
+        }
+    }
+
+    .contant-container {
+        display: grid;
+        grid-template-areas:
+            'img name'
+            'img disc';
+
+        grid-template-columns: 180px 1fr;
+        grid-template-rows: 40px 1fr;
+        grid-gap: 16px;
+
+        .image-upload {
+            grid-area: img;
+            height: 200px;
+            .image{
+                height: 100%;
+            }
+            input{
+                height: 200px;
+                width: 180px;
+            }
+        }
+
+        .playlist-name,
+        .playlist-disc {
+            font-family: Circular;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: $clr1;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .playlist-name {
+            grid-area: name;
+            padding: 8px;
+        }
+
+        .playlist-disc {
+            text-align: start;
+            padding: 8px 8px 28px;
+        }
+    }
+
+    .btn-save {
+        background-color: $clr1;
+        border: none;
+        border-radius: 50px;
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 700;
+        margin-block-start: 8px;
+        margin-inline-start: auto;
+    }
+
+    .edit-footer {
+        font-size: 0.6875rem;
+        font-weight: 700;
+        line-height: 1.6;
+        padding-block-start: 5px;
+    }
+
+    @include for-mobile-layout {
+        transform: none;
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+
+        .contant-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .btn-save {
+            margin-inline-end: auto;
+        }
+
+        & .image-upload {
+            width: 70%;
+            height: 70% !important;
+            align-self: center;
+
+            .image{
+                max-height: 250px;
+            }
+
+            input{
+                height: 250px !important;
+                width: 250px !important;
+            }
+        }
+    }
+}

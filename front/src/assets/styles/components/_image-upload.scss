@@ -1,0 +1,16 @@
+.image-upload{
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+    border: 1px solid $clr1;
+    input{
+        cursor: pointer;
+        opacity: 0;
+        position: absolute;
+    }
+    .image{
+        cursor: pointer;
+        width: 100%;
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,1389 @@
+[
+    {
+        "spotifyId":"0JQ5DAqbMKFCbimwdOYlsl",
+        "name": "Focus",
+        "imgUrl": "https://t.scdn.co/media/original/genre-images-square-274x274_5e50d72b846a198fcd2ca9b3aef5f0c8_274x274.jpg",
+        "backgroundColor": "#503750",    
+        "href": "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFCbimwdOYlsl/playlists?country=IL&offset=0&limit=20",
+            "items": [{
+                    "collaborative": false,
+                    "description": "Welcome to the soothing hum...",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWUZ5bk6qqDSy"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWUZ5bk6qqDSy",
+                    "id": "37i9dQZF1DWUZ5bk6qqDSy",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f00000003fb21c7706fe265bea8ec5a69",
+                        "width": null
+                    }],
+                    "name": "White Noise",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MDE4ODA4MywwMDAwMDAwMDJiMjNiODY0NjEyODU4YmEyYTgxNjljYThiYzMzNTJh",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWUZ5bk6qqDSy/tracks",
+                        "total": 246
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DWUZ5bk6qqDSy"
+                },
+                {
+                    "collaborative": false,
+                    "description": "The chillest beats to help you relax, study, code, and focus.",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWWQRwui0ExPn"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWQRwui0ExPn",
+                    "id": "37i9dQZF1DWWQRwui0ExPn",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f00000003abaf6c3c6a4b29f8a4565a86",
+                        "width": null
+                    }],
+                    "name": "lofi beats",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MjU5NjMzNCwwMDAwMDAwMGNiZTQwOTRiNDJhMTZiMTZiYTA2NzEyZDRkYjYwNzM2",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWQRwui0ExPn/tracks",
+                        "total": 750
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DWWQRwui0ExPn"
+                },
+                {
+                    "collaborative": false,
+                    "description": "Keep calm and focus with ambient and post-rock music.",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWZeKCadgRdKQ"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZeKCadgRdKQ",
+                    "id": "37i9dQZF1DWZeKCadgRdKQ",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f000000035551996f500ba876bda73fa5",
+                        "width": null
+                    }],
+                    "name": "Deep Focus",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MjcwMTY5MSwwMDAwMDAwMGYyZTNiNjkzZTk3NjMxY2VhMDk0ZmNkMWQ1YmY2MTkx",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZeKCadgRdKQ/tracks",
+                        "total": 250
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DWZeKCadgRdKQ"
+                },
+                {
+                    "collaborative": false,
+                    "description": "עוזרים לכם לעבור בצ׳יל עוד יום עבודה",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWZlkxOcZs4no"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZlkxOcZs4no",
+                    "id": "37i9dQZF1DWZlkxOcZs4no",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f000000034a2a4fe6f30bff4eee99387a",
+                        "width": null
+                    }],
+                    "name": "בעבודה",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY0OTM0OTU3OSwwMDAwMDAwMDQ4OWZiODlmNTQ2OWE2OTFiMjZjY2Y2M2NhMTdhZWYw",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZlkxOcZs4no/tracks",
+                        "total": 50
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DWZlkxOcZs4no"
+                },
+                {
+                    "collaborative": false,
+                    "description": "Soft Jazz beats in the background while you're studying or relaxing.",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX06817kK7cRP"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX06817kK7cRP",
+                    "id": "37i9dQZF1DX06817kK7cRP",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f0000000301b89480638dbea6239a31a0",
+                        "width": null
+                    }],
+                    "name": "Smooth Jazz Beats",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MjYzMjg2MCwwMDAwMDAwMDExYmMxNmE4MzBjOTc4MTk5MDY1OTk2MzZhZDMxMjk5",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX06817kK7cRP/tracks",
+                        "total": 100
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DX06817kK7cRP"
+                },
+                {
+                    "collaborative": false,
+                    "description": "Soothing, low frequencies for relaxation, meditation or sleep.",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX4hpot8sYudB"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4hpot8sYudB",
+                    "id": "37i9dQZF1DX4hpot8sYudB",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f00000003fbf8dcb03962d651152e64a4",
+                        "width": null
+                    }],
+                    "name": "Brown Noise",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MjA4MDIxNCwwMDAwMDAwMDAyNDcwYWJlYWI4NGUwNTQxYzMxMWNhNWJmMjIyYzU3",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4hpot8sYudB/tracks",
+                        "total": 229
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DX4hpot8sYudB"
+                },
+                {
+                    "collaborative": false,
+                    "description": "Simply rain ",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX8ymr6UES7vc"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8ymr6UES7vc",
+                    "id": "37i9dQZF1DX8ymr6UES7vc",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f000000034a46a7f4e55bbc386dc77f84",
+                        "width": null
+                    }],
+                    "name": "Rain Sounds",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY3NzUwODk2MiwwMDAwMDAwMDJkOGFmNGZjMTZiYWQ5ODJmYjg2OGUxZTllYmIwMDQ3",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8ymr6UES7vc/tracks",
+                        "total": 290
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DX8ymr6UES7vc"
+                },
+                {
+                    "collaborative": false,
+                    "description": "The perfect study beats. Find your focus, crush your productivity. ",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX8Uebhn9wzrS"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8Uebhn9wzrS",
+                    "id": "37i9dQZF1DX8Uebhn9wzrS",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f0000000374fff2139c75c7083370e10c",
+                        "width": null
+                    }],
+                    "name": "chill lofi study beats",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MjAwMjYwMiwwMDAwMDAwMGFjYzAyZDgzZWU2NzBhOGNkMTkzYjI5MTA3Yjc3OTdl",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8Uebhn9wzrS/tracks",
+                        "total": 524
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DX8Uebhn9wzrS"
+                },
+                {
+                    "collaborative": false,
+                    "description": "לימודים לא צריכים להיות מלחיצים - תכנסו לאווירה מרוכזת עם הפלייליסט הנעים והמרגיע הזה",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXc5h0hTDX230"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXc5h0hTDX230",
+                    "id": "37i9dQZF1DXc5h0hTDX230",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f000000037593e7102541d2bfa7a32c3a",
+                        "width": null
+                    }],
+                    "name": "לומדים באיזי",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY0MzcxMjY1NiwwMDAwMDAwMDI0YWNkMWU4NWY5NjU4YTAzNGNjOWU5ZWRhY2Y3YTU0",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXc5h0hTDX230/tracks",
+                        "total": 100
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DXc5h0hTDX230"
+                },
+                {
+                    "collaborative": false,
+                    "description": "Relax to the roaring sound of crashing waves.",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWV90ZWj21ygB"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWV90ZWj21ygB",
+                    "id": "37i9dQZF1DWV90ZWj21ygB",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f0000000399613f81e4e9fd7f04aad328",
+                        "width": null
+                    }],
+                    "name": "Sounds of the Ocean",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY2OTIxNTc5OSwwMDAwMDAwMGUzZmZlMjQ5OTA0Y2U1ZDU0YzQzOTU1Yzg2YjdhOGU5",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWV90ZWj21ygB/tracks",
+                        "total": 213
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DWV90ZWj21ygB"
+                },
+                {
+                    "collaborative": false,
+                    "description": "The perfect frequency for sleep or study – science tested, listener approved.",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWZhzMp90Opmn"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZhzMp90Opmn",
+                    "id": "37i9dQZF1DWZhzMp90Opmn",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f000000038e93b1cc6a26e4ccffbb9997",
+                        "width": null
+                    }],
+                    "name": "Pink Noise",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY3ODk4MzM4MywwMDAwMDAwMGRiZjJjMTMxNjFiZTYyM2UyZWYwNWIyOGU4ZmUzZGI0",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZhzMp90Opmn/tracks",
+                        "total": 175
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DWZhzMp90Opmn"
+                },
+                {
+                    "collaborative": false,
+                    "description": "Calm and quiet piano music for reading.",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWZwtERXCS82H"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZwtERXCS82H",
+                    "id": "37i9dQZF1DWZwtERXCS82H",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f0000000343ff9e8e76a553c0dc258e59",
+                        "width": null
+                    }],
+                    "name": "Reading Soundtrack",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MTI5NTQ2MiwwMDAwMDAwMGE4N2IyZjdiZDQxMjZlNjFiYjNiN2U2Y2NhNDczNDAz",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZwtERXCS82H/tracks",
+                        "total": 353
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DWZwtERXCS82H"
+                },
+                {
+                    "collaborative": false,
+                    "description": "Calming green frequencies and nature sounds to help you relax and sleep. ",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWZ8HCIPoGGKp"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZ8HCIPoGGKp",
+                    "id": "37i9dQZF1DWZ8HCIPoGGKp",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f00000003b20c9e22def0f18234dc0c55",
+                        "width": null
+                    }],
+                    "name": "Green Noise",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY3OTYxOTYwMCwwMDAwMDAwMDk1ZjAyMDhiZTA3YTc2MGNlY2VlOTk2MzE2NzE1ZDY2",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZ8HCIPoGGKp/tracks",
+                        "total": 205
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DWZ8HCIPoGGKp"
+                },
+                {
+                    "collaborative": false,
+                    "description": "Uptempo instrumental hip hop beats.",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWZZbwlv3Vmtr"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZZbwlv3Vmtr",
+                    "id": "37i9dQZF1DWZZbwlv3Vmtr",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f00000003724554ed6bed6f051d9b0bfc",
+                        "width": null
+                    }],
+                    "name": "Focus Flow",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MjY3NDAxMywwMDAwMDAwMDY1ZGQ0MjZmMDEwODczZmE5MDkyMTdlYTY4Yzg5MjIw",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWZZbwlv3Vmtr/tracks",
+                        "total": 413
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DWZZbwlv3Vmtr"
+                },
+                {
+                    "collaborative": false,
+                    "description": "Get. It. Done. Focus-enhancing piano music to keep you motivated during your study session. ",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX8NTLI2TtZa6"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8NTLI2TtZa6",
+                    "id": "37i9dQZF1DX8NTLI2TtZa6",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f00000003a147137323f796ef58e54411",
+                        "width": null
+                    }],
+                    "name": "Intense Studying",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MTgyODYyNywwMDAwMDAwMGZmYmYwMTE4Nzk2YTBlZjZiYzQ5ZjZhZmEzOWFiZDI5",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8NTLI2TtZa6/tracks",
+                        "total": 214
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DX8NTLI2TtZa6"
+                },
+                {
+                    "collaborative": false,
+                    "description": "<a href=\"spotify:genre:space:electronica_chill\">Hypnotic electronic</a> for studies and a relax.",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWXLeA8Omikj7"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWXLeA8Omikj7",
+                    "id": "37i9dQZF1DWXLeA8Omikj7",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f000000031888f73e300bd0ee976b0180",
+                        "width": null
+                    }],
+                    "name": "Brain Food",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MjY1NDQ2MCwwMDAwMDAwMDQzZDk5OWNhZDI2Y2ViZDQ0ZTEyZjUzNDAyNDI3MjAw",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWXLeA8Omikj7/tracks",
+                        "total": 100
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DWXLeA8Omikj7"
+                },
+                {
+                    "collaborative": false,
+                    "description": "Focus with deep techno and tech house.",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXa2SPUyWl8Y5"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXa2SPUyWl8Y5",
+                    "id": "37i9dQZF1DXa2SPUyWl8Y5",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f0000000396e08a91ef3c7a6e7bfaa9a6",
+                        "width": null
+                    }],
+                    "name": "Beats to think to",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MjY5NjQ4NiwwMDAwMDAwMDdlYzJjZTYzNTkwYTRmNDRjMWYyYTMwNDgyODE4MTYw",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXa2SPUyWl8Y5/tracks",
+                        "total": 80
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DXa2SPUyWl8Y5"
+                },
+                {
+                    "collaborative": false,
+                    "description": "Focus with soft study music in the background.",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX9sIqqvKsjG8"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX9sIqqvKsjG8",
+                    "id": "37i9dQZF1DX9sIqqvKsjG8",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f00000003fe24d7084be472288cd6ee6c",
+                        "width": null
+                    }],
+                    "name": "Instrumental Study",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MjQyMDA2NSwwMDAwMDAwMGJiYWIxNzkwZDQzMmRjOTFjOTQyYTYyNjQyM2U2ZjJj",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX9sIqqvKsjG8/tracks",
+                        "total": 319
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DX9sIqqvKsjG8"
+                },
+                {
+                    "collaborative": false,
+                    "description": "Dedicated to all the programmers out there.",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX5trt9i14X7j"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5trt9i14X7j",
+                    "id": "37i9dQZF1DX5trt9i14X7j",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f00000003863b311d4b787ed621f7e696",
+                        "width": null
+                    }],
+                    "name": "Coding Mode  ",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MTEyMjk3MSwwMDAwMDAwMGQ4NzBlOWFmYzk2OWIzNGM1NmE4YmQ3MjIzN2ZkYjVk",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5trt9i14X7j/tracks",
+                        "total": 117
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DX5trt9i14X7j"
+                },
+                {
+                    "collaborative": false,
+                    "description": "Lounge and chill out music for your workday.",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWT5lkChsPmpy"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWT5lkChsPmpy",
+                    "id": "37i9dQZF1DWT5lkChsPmpy",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f00000003e435ce0a86a8b9dc24527618",
+                        "width": null
+                    }],
+                    "name": "Workday Lounge",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MjcwMDAxMCwwMDAwMDAwMDc0MTM1ZTMyNGMyNjc3YWQzODljMjg2MDc2ODUxMjA0",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWT5lkChsPmpy/tracks",
+                        "total": 238
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DWT5lkChsPmpy"
+                }
+            ],
+            "limit": 20,
+            "next": "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFCbimwdOYlsl/playlists?country=IL&offset=20&limit=20",
+            "offset": 0,
+            "previous": null,
+            "total": 91
+        
+    },
+    {
+        "spotifyId": "0JQ5DAqbMKFEC4WFtoNRpw",
+        "name": "Pop",
+        "imgUrl": "https://t.scdn.co/media/derived/pop-274x274_447148649685019f5e2a03a39e78ba52_0_0_274_274.jpg",
+        "backgroundColor": "#f037a5",
+            "href": "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFEC4WFtoNRpw/playlists?country=IL&offset=0&limit=20",
+            "items": [{
+                    "collaborative": false,
+                    "description": "הפלייליסט הכי גדול בישראל, עם השירים הכי חמים של היום ומחר. קאבר: יונתן קלימי",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWSYF6geMtQMW"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWSYF6geMtQMW",
+                    "id": "37i9dQZF1DWSYF6geMtQMW",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f00000003393b8fbb0cadeb75edf46abb",
+                        "width": null
+                    }],
+                    "name": "הלהיטים הגדולים של ישראל",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MjMzNzg1NCwwMDAwMDAwMDRhZTUyNTMzNjBjNjc5OWQ2MTU1M2JjMWFkZjE0NzA5",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWSYF6geMtQMW/tracks",
+                        "total": 50
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DWSYF6geMtQMW"
+                },
+                {
+                    "collaborative": false,
+                    "description": "כל הפופ הכיף והמרגש של ישראל. קאבר: מרגי     \n",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX9sLipKPkV9T"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX9sLipKPkV9T",
+                    "id": "37i9dQZF1DX9sLipKPkV9T",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f0000000326843c3d62e1f71333ad8a2d",
+                        "width": null
+                    }],
+                    "name": "פופ ישראלי חדש",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MjY2Nzc3NCwwMDAwMDAwMGU3ZDVhYmNjYTU5Y2JlOGQxY2QxYWM1YWZhNGI2ZTE4",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX9sLipKPkV9T/tracks",
+                        "total": 50
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DX9sLipKPkV9T"
+                },
+                {
+                    "collaborative": false,
+                    "description": "Rema & Selena Gomez are on top of the Hottest 50!",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXcBWIGoYBM5M",
+                    "id": "37i9dQZF1DXcBWIGoYBM5M",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f000000031d051b0d3dcb712c312eb94b",
+                        "width": null
+                    }],
+                    "name": "Today's Top Hits",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MjY5MDMzOCwwMDAwMDAwMGY0MTVhOTRmYjk3ZjgzY2I3M2YwODAxNmZmY2NhYjFk",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXcBWIGoYBM5M/tracks",
+                        "total": 50
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DXcBWIGoYBM5M"
+                },
+                {
+                    "collaborative": false,
+                    "description": "תחנת הרדיו הפרטית שלכם. שירים יפים מישראל והעולם. עטיפה: שירה מרגלית ",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWV9KyA92twJc"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWV9KyA92twJc",
+                    "id": "37i9dQZF1DWV9KyA92twJc",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f00000003bb5298f0477d74dc08affdbb",
+                        "width": null
+                    }],
+                    "name": "רדיו ישראל",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MjYyOTIwMCwwMDAwMDAwMDUyY2I4NDM1ZjI1ZmNiOGEwZDljMTZmN2JiN2Q4YzIw",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWV9KyA92twJc/tracks",
+                        "total": 100
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DWV9KyA92twJc"
+                },
+                {
+                    "collaborative": false,
+                    "description": "iykyk",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX5Vy6DFOcx00"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5Vy6DFOcx00",
+                    "id": "37i9dQZF1DX5Vy6DFOcx00",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f000000031c9bfca9b2fd2f546a30f751",
+                        "width": null
+                    }],
+                    "name": "big on the internet",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MjY5NTMxNywwMDAwMDAwMDE2MmViMWIxOWVhNjA2ZGE4ZjE4MDM1YWViMDkxNjMy",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5Vy6DFOcx00/tracks",
+                        "total": 122
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DX5Vy6DFOcx00"
+                },
+                {
+                    "collaborative": false,
+                    "description": "להיטי הפופ הגדולים של ישראל. קאבר: אגם בוחבוט",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX3PGzKQakrnm"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX3PGzKQakrnm",
+                    "id": "37i9dQZF1DX3PGzKQakrnm",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f000000030dfe0c38cf8c37781b62b38d",
+                        "width": null
+                    }],
+                    "name": "פופ ישראלי: הלהיטים",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MjYyOTIwMCwwMDAwMDAwMDE1ZTdhYWZmMzJmYWQ1MDM5YTczODNjNjlkYjZjMTVk",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX3PGzKQakrnm/tracks",
+                        "total": 75
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DX3PGzKQakrnm"
+                },
+                {
+                    "collaborative": false,
+                    "description": "Current favorites and exciting new music. Cover: Niall Horan",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXcRXFNfZr7Tp"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXcRXFNfZr7Tp",
+                    "id": "37i9dQZF1DXcRXFNfZr7Tp",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f000000035b3f397766d9f51cf1a8688d",
+                        "width": null
+                    }],
+                    "name": "just hits",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MjY1NDQ2MCwwMDAwMDAwMDc3MThlOThiYzNkNzRiNmRmNDU2NmIxY2UyNjc5YjJl",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXcRXFNfZr7Tp/tracks",
+                        "total": 100
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DXcRXFNfZr7Tp"
+                },
+                {
+                    "collaborative": false,
+                    "description": "Get happy with today's dose of feel-good songs!",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX3rxVfibe1L0"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX3rxVfibe1L0",
+                    "id": "37i9dQZF1DX3rxVfibe1L0",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f00000003bd0e19e810bb4b55ab164a95",
+                        "width": null
+                    }],
+                    "name": "Mood Booster",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MjY5NDUyMiwwMDAwMDAwMGJkYmQxNmE2ZThjN2NhMDRiMTEyY2I0YjVmYTUwOWNi",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX3rxVfibe1L0/tracks",
+                        "total": 78
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DX3rxVfibe1L0"
+                },
+                {
+                    "collaborative": false,
+                    "description": "Upbeat dance pop to keep your heart pumping.",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWSJHnPb1f0X3"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWSJHnPb1f0X3",
+                    "id": "37i9dQZF1DWSJHnPb1f0X3",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f00000003708c623e2e1df4607775381b",
+                        "width": null
+                    }],
+                    "name": "Cardio",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MjY1NDQ2MCwwMDAwMDAwMDIyYTZkOGY3NWNhNDk2NWMzMDdhNDUyOWNmYjc2ZmZk",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWSJHnPb1f0X3/tracks",
+                        "total": 100
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DWSJHnPb1f0X3"
+                },
+                {
+                    "collaborative": false,
+                    "description": "Warm familiar pop you know and love. Cover: Sam Smith",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWTwnEm1IYyoj"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWTwnEm1IYyoj",
+                    "id": "37i9dQZF1DWTwnEm1IYyoj",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f0000000387902d641aa9fd5454112f57",
+                        "width": null
+                    }],
+                    "name": "Soft Pop Hits",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY3ODgyMTE1MiwwMDAwMDAwMDE2ZWRkZmFiOTI3ZWNiMDFiMzI0YTk1MjExZTgyMzZl",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWTwnEm1IYyoj/tracks",
+                        "total": 100
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DWTwnEm1IYyoj"
+                },
+                {
+                    "collaborative": false,
+                    "description": "A mega mix of 75 favorites from the last few years! ",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXbYM3nMM0oPk"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXbYM3nMM0oPk",
+                    "id": "37i9dQZF1DXbYM3nMM0oPk",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f00000003fecb9c578f38ebc8eef432cc",
+                        "width": null
+                    }],
+                    "name": "Mega Hit Mix",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MjM0MjgwMCwwMDAwMDAwMDc4NDk2YjlkYzQxN2UxMTQ0ZmFlNmFhYmRlY2EzNTcw",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXbYM3nMM0oPk/tracks",
+                        "total": 75
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DXbYM3nMM0oPk"
+                },
+                {
+                    "collaborative": false,
+                    "description": "Set it off with these epic anthems. Only good vibes here!",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWYBO1MoTDhZI"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWYBO1MoTDhZI",
+                    "id": "37i9dQZF1DWYBO1MoTDhZI",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f000000037dc2a0fb4bfe0d07294f685e",
+                        "width": null
+                    }],
+                    "name": "Good Vibes",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MjY1NDQwMCwwMDAwMDAwMGRhNDJhMmY1NWJhZjU3ZjA3NjA2NTRlYWU1Zjg3Zjcx",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWYBO1MoTDhZI/tracks",
+                        "total": 80
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DWYBO1MoTDhZI"
+                },
+                {
+                    "collaborative": false,
+                    "description": "The most interesting tracks in the current world of pop music.",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWVlLVXKTOAYa"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWVlLVXKTOAYa",
+                    "id": "37i9dQZF1DWVlLVXKTOAYa",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f00000003d0a248246eefcba19136cc4d",
+                        "width": null
+                    }],
+                    "name": "Pop Right Now",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MjYzMjgwMCwwMDAwMDAwMGRkMzZlNzM2NDQ5OGNhOGY1NTI2MDM1MjBiNDYxZjMx",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWVlLVXKTOAYa/tracks",
+                        "total": 100
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DWVlLVXKTOAYa"
+                },
+                {
+                    "collaborative": false,
+                    "description": "Pop hits to keep your workout fresh with a takeover by Strava. <a href=\"https://newsroom.spotify.com/2023-04-12/spotify-strava-integration-stream-track-workout/\">Learn more about the partnership.</a>",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX70RN3TfWWJh"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX70RN3TfWWJh",
+                    "id": "37i9dQZF1DX70RN3TfWWJh",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f0000000313a1498b35503ba1acfffa72",
+                        "width": null
+                    }],
+                    "name": "Workout",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MjY1NDQ2MCwwMDAwMDAwMGE1NDUwNGY0NzNkOGYxNGQyOGIxODY5ZTgwOWRkOTQ2",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX70RN3TfWWJh/tracks",
+                        "total": 100
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DX70RN3TfWWJh"
+                },
+                {
+                    "collaborative": false,
+                    "description": "Mixing the decades: 1990s, 2000s, 2010s and 2020s.",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWUZMtnnlvJ9p"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWUZMtnnlvJ9p",
+                    "id": "37i9dQZF1DWUZMtnnlvJ9p",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f00000003308b811b06db445c34a9a1cf",
+                        "width": null
+                    }],
+                    "name": "The Ultimate Hit Mix",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MjUwOTMyMCwwMDAwMDAwMDhiMzA2OWRhMDA1Y2VkNDVmYjkxYjdiMmI2Yjk5YTNi",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWUZMtnnlvJ9p/tracks",
+                        "total": 144
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DWUZMtnnlvJ9p"
+                },
+                {
+                    "collaborative": false,
+                    "description": "Get in the zone with these current jams!",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWU13kKnk03AP"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWU13kKnk03AP",
+                    "id": "37i9dQZF1DWU13kKnk03AP",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f0000000379b71c14d0de6559395718b1",
+                        "width": null
+                    }],
+                    "name": "Daily Lift",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MjY1NDU4MSwwMDAwMDAwMDIwMjY4NTFmMmFiZWY4MjAyZjlhOThhNjhjOWM5N2Jk",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWU13kKnk03AP/tracks",
+                        "total": 100
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DWU13kKnk03AP"
+                },
+                {
+                    "collaborative": false,
+                    "description": "Who's now and next in pop. Cover: Lizzy McAlpine",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWUa8ZRTfalHk"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWUa8ZRTfalHk",
+                    "id": "37i9dQZF1DWUa8ZRTfalHk",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f00000003e84b064aec8a3613d4a05ce0",
+                        "width": null
+                    }],
+                    "name": "Pop Rising",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MjY5MjAwMSwwMDAwMDAwMDRkMjZjOTdhNmFiNzg1ZDQ5NDE5MWJlY2IyYzIzNTIy",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWUa8ZRTfalHk/tracks",
+                        "total": 85
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DWUa8ZRTfalHk"
+                },
+                {
+                    "collaborative": false,
+                    "description": "Listen to all the tracks you've been missing. Cover: Katy Perry",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX0s5kDXi1oC5"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0s5kDXi1oC5",
+                    "id": "37i9dQZF1DX0s5kDXi1oC5",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f000000034477d03df61b0379b33f8e4f",
+                        "width": null
+                    }],
+                    "name": "Hit Rewind",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MDU1ODY1MSwwMDAwMDAwMDEzYjcwNGIxYmYxNzk0YmY1MDFjOGE4NjMzMGU1NzY0",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0s5kDXi1oC5/tracks",
+                        "total": 100
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DX0s5kDXi1oC5"
+                },
+                {
+                    "collaborative": false,
+                    "description": "Need to get your energy level up?",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX0vHZ8elq0UK"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0vHZ8elq0UK",
+                    "id": "37i9dQZF1DX0vHZ8elq0UK",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f00000003a2bd8d4f547e612ceaef9d4a",
+                        "width": null
+                    }],
+                    "name": "Energy Booster: Pop",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY3OTY1NTYwMCwwMDAwMDAwMGMyM2Q4NTJjMzViZWY5NWJmNWNmZDRmMjgyMzhkYTUx",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0vHZ8elq0UK/tracks",
+                        "total": 150
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DX0vHZ8elq0UK"
+                },
+                {
+                    "collaborative": false,
+                    "description": "Mellow songs from the 90s. Cover: <a href=\"spotify:artist:0Ty63ceoRnnJKVEYP0VQpk\">Sting</a>",
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX2syo5w7a1cu"
+                    },
+                    "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX2syo5w7a1cu",
+                    "id": "37i9dQZF1DX2syo5w7a1cu",
+                    "images": [{
+                        "height": null,
+                        "url": "https://i.scdn.co/image/ab67706f00000003030da4a677cf09c18bbeaa99",
+                        "width": null
+                    }],
+                    "name": "Soft 90s",
+                    "owner": {
+                        "display_name": "Spotify",
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/user/spotify"
+                        },
+                        "href": "https://api.spotify.com/v1/users/spotify",
+                        "id": "spotify",
+                        "type": "user",
+                        "uri": "spotify:user:spotify"
+                    },
+                    "primary_color": null,
+                    "public": null,
+                    "snapshot_id": "MTY4MTQ2MzMwMiwwMDAwMDAwMDM3YjExYWNiMDA2Y2Q3N2RiNmMxNzNjNjBhZTU0MTJj",
+                    "tracks": {
+                        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX2syo5w7a1cu/tracks",
+                        "total": 200
+                    },
+                    "type": "playlist",
+                    "uri": "spotify:playlist:37i9dQZF1DX2syo5w7a1cu"
+                }
+            ],
+            "limit": 20,
+            "next": "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFEC4WFtoNRpw/playlists?country=IL&offset=20&limit=20",
+            "offset": 0,
+            "previous": null,
+            "total": 38
+    }
+]
