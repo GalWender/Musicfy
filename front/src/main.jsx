@@ -1,4 +1,5 @@
 import React from 'react'
+import './pwa-install.js'
 import ReactDOM from 'react-dom/client'
 
 import App from './App'

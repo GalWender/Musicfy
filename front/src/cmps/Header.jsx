@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
+import { getDeferredPrompt } from '../pwa-install.js'
 import { useNavigate, useLocation } from 'react-router-dom'
 import EventBus from 'react-native-event-bus'
 import { useSelector, useDispatch } from "react-redux"
@@ -49,6 +50,7 @@ export const Header = () => {
     const [canInstall, setCanInstall] = useState(false)
     const deferredPromptRef = useRef(null)
     const [isStandalone, setIsStandalone] = useState(false)
+    const [showInstallHint, setShowInstallHint] = useState(false)
 
     useEffect(() => {
         EventBus.getInstance().addListener("toggleOpacity",  (data) =>{
@@ -69,8 +71,31 @@ export const Header = () => {
 
     // Detect PWA install availability and installed state
     useEffect(() => {
+        // 1) If an early beforeinstallprompt was already captured before React mounted
+        const early = getDeferredPrompt?.()
+        if (early) {
+            deferredPromptRef.current = early
+            setCanInstall(true)
+        }
+
+        // 2) Listen to our early-capture custom events
+        const onCustomBIP = () => {
+            const p = getDeferredPrompt?.()
+            if (p) {
+                deferredPromptRef.current = p
+                setCanInstall(true)
+            }
+        }
+        const onCustomInstalled = () => {
+            deferredPromptRef.current = null
+            setCanInstall(false)
+        }
+        window.addEventListener('pwa:beforeinstallprompt', onCustomBIP)
+        window.addEventListener('pwa:appinstalled', onCustomInstalled)
+
+        // 3) Native listeners as a fallback (if module wasn’t loaded for some reason)
         const onBeforeInstallPrompt = (e) => {
-            e.preventDefault()
+            try { e.preventDefault() } catch (_) {}
             deferredPromptRef.current = e
             setCanInstall(true)
         }
@@ -81,7 +106,7 @@ export const Header = () => {
         window.addEventListener('beforeinstallprompt', onBeforeInstallPrompt)
         window.addEventListener('appinstalled', onAppInstalled)
 
-        // Track display-mode changes (installed/standalone)
+        // 4) Track display-mode changes (installed/standalone)
         const mq = window.matchMedia('(display-mode: standalone)')
         setIsStandalone(mq.matches)
         const onChange = (e) => {
@@ -91,24 +116,29 @@ export const Header = () => {
         try { mq.addEventListener('change', onChange) } catch { mq.addListener(onChange) }
 
         return () => {
+            window.removeEventListener('pwa:beforeinstallprompt', onCustomBIP)
+            window.removeEventListener('pwa:appinstalled', onCustomInstalled)
             window.removeEventListener('beforeinstallprompt', onBeforeInstallPrompt)
             window.removeEventListener('appinstalled', onAppInstalled)
             try { mq.removeEventListener('change', onChange) } catch { mq.removeListener(onChange) }
         }
     }, [])
 
-    async function onInstallClick() {
+    function onInstallClick() {
         try {
             const promptEvent = deferredPromptRef.current
             if (!promptEvent) {
-                // Fallback: basic instructions if the browser throttled the prompt or doesn't support it
-                alert('Install via your browser menu: Look for "Install app" or "Add to Home screen" in the menu.')
+                // Non-blocking inline hint instead of blocking alert()
+                setShowInstallHint(true)
+                setTimeout(() => setShowInstallHint(false), 3500)
                 return
             }
+            // Trigger prompt but don't await inside click handler to avoid long task
             promptEvent.prompt()
-            await promptEvent.userChoice
-            deferredPromptRef.current = null
-            setCanInstall(false)
+            promptEvent.userChoice.then(() => {
+                deferredPromptRef.current = null
+                setCanInstall(false)
+            }).catch(() => {})
         } catch (_) { }
     }
 
@@ -193,7 +223,12 @@ export const Header = () => {
                 }
             </section>
             {!isStandalone && (
-                <button className={'btn-install' + (canInstall ? '' : ' pending')} onClick={onInstallClick} title={canInstall ? 'Install app' : 'Install (use browser menu if disabled)'}>Install app</button>
+                <>
+                    <button className={'btn-install' + (canInstall ? '' : ' pending')} onClick={onInstallClick} title={canInstall ? 'Install app' : 'Install (use browser menu if disabled)'}>Install app</button>
+                    {showInstallHint && (
+                        <div className='install-hint'>Open your browser menu and choose “Install app” / “Add to Home screen”.</div>
+                    )}
+                </>
             )}
             {currUser.fullname ? 
                 <section className='user-container' onClick={toggleModal}>
