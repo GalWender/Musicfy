@@ -1,17 +1,12 @@
 import { useEffect, useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
 import { HomeList } from '../cmps/HomeList'
-import { loadCategories, setFilterBy } from '../store/actions/categories.actions'
 import { useObserver } from '../customHooks/useObserver'
-import { categoryService } from '../services/category.service'
-import { playlistService } from '../services/playlist.service'
 import { Loader } from '../cmps/Loader'
+import { httpService } from '../services/http.service'
 
 export const Home = () => {
 
-    const dispatch = useDispatch()
-    const categories = useSelector(state => state.categoryModule.categories)
-    const [homeRows, setHomeRows] = useState(null)
+    const [featured, setFeatured] = useState(null)
     const [containerRef] = useObserver()
 
     const [dimensions, setDimensions] = useState({
@@ -32,68 +27,28 @@ export const Home = () => {
     }, [])
 
     useEffect(() => {
-        getCategories({txt:"HomePage"})
-    },[])
-
-    // When live categories arrive, fetch a few playlists per category for Home rows
-    // Do NOT refetch on window resize to avoid repeated API calls
-    useEffect(() => {
-        if (!categories || !Array.isArray(categories)) return
-        console.log('[Home] live categories', { count: categories.length, sample: categories[0] })
-        const pick = categories.slice(0, 6) // show first 6 categories as rows
+        // Single backend call which maps Spotify featured playlists to card shape
         ;(async () => {
             try {
-                // Determine target per row once, based on current width
-                const w = (typeof window !== 'undefined') ? window.innerWidth : 1200
-                const MIN_PER_ROW = w < 975 ? 6 : (w < 1500 ? 8 : 10)
-                const CONCURRENCY = 2
-                const rows = []
-                for (let i = 0; i < pick.length; i += CONCURRENCY) {
-                    const batch = pick.slice(i, i + CONCURRENCY)
-                    const part = await Promise.all(batch.map(async (cat) => {
-                        let items = await categoryService.getById(cat.id, cat.name)
-                        if (!Array.isArray(items)) items = []
-                        // If too few items, pad with search results (deduped)
-                        if (items.length < MIN_PER_ROW) {
-                            try {
-                                const extras = await playlistService.getSearchItems(cat.name, 'playlist')
-                                const have = new Set(items.map(p => p.spotifyId || p.id))
-                                const toAdd = (extras || []).filter(e => {
-                                    const key = e.spotifyId || e.id
-                                    return key && !have.has(key)
-                                }).slice(0, MIN_PER_ROW - items.length)
-                                items = items.concat(toAdd)
-                            } catch (e) {
-                                console.log('[Home] padding search failed', e)
-                            }
-                        }
-                        console.log('[Home] row', { title: cat.name, id: cat.id, count: items.length, sample: items[0] })
-                        return { id: cat.id, title: cat.name, playlists: items }
-                    }))
-                    rows.push(...part)
-                }
-                setHomeRows(rows)
+                const items = await httpService.get('home/featured', { limit: 18 })
+                setFeatured([{ id: 'featured', title: 'Featured', playlists: items || [] }])
             } catch (err) {
-                console.log('Failed loading home rows', err)
-                setHomeRows([])
+                console.log('Failed loading featured playlists', err)
+                setFeatured([])
             }
         })()
-    }, [categories])
-    
-    const getCategories = (filterBy) => {
-        dispatch(setFilterBy(filterBy))
-        dispatch(loadCategories())
-    }
+    }, [])
+
+    // No categories flow; homepage is a single featured row
 
 
-    if(!categories) return <div style={{ display: 'grid', placeItems: 'center', minHeight: '60vh' }}><Loader label="Loading categories..." /></div>
-    if(!homeRows) return <div style={{ display: 'grid', placeItems: 'center', minHeight: '60vh' }}><Loader label="Loading playlists..." /></div>
+    if(!featured) return <div style={{ display: 'grid', placeItems: 'center', minHeight: '60vh' }}><Loader label="Loading playlists..." /></div>
     return (
         <div className='home-container'>
             <div ref={containerRef}></div>
-            {homeRows.map((row, idx) => {
-                return <HomeList id={row.id} title={row.title} playlists={row.playlists} idx={idx} key={row.id} width={dimensions.width}/>
-            })}
+            {featured.map((row, idx) => (
+                <HomeList id={row.id} title={row.title} playlists={row.playlists} idx={idx} key={row.id} width={dimensions.width}/>
+            ))}
         </div>
     )
 }

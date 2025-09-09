@@ -24,6 +24,19 @@ function runQueued() {
     })
   }
 }
+// getFeaturedPlaylists is defined later (single source of truth)
+
+// Simple in-memory cache with TTL per key
+const gCache = new Map() // key -> { data, expiresAt }
+function setCache(key, data, ttlMs) {
+  gCache.set(key, { data, expiresAt: Date.now() + ttlMs })
+}
+function getCache(key) {
+  const ent = gCache.get(key)
+  if (!ent) return null
+  if (Date.now() > ent.expiresAt) { gCache.delete(key); return null }
+  return ent.data
+}
 function withLimit(taskFn) {
   return new Promise((resolve, reject) => {
     queue.push(async () => {
@@ -261,6 +274,34 @@ async function getCategoryPlaylists(categoryId, desired = 18, country = 'US') {
   }
 }
 
+async function getFeaturedPlaylists({ limit = 20, offset = 0, country = 'US', locale } = {}) {
+  try {
+    const params = { limit, offset, country }
+    if (locale) params.locale = locale
+    logger.debug('spotify.getFeaturedPlaylists - start', params)
+    // Cache key and TTL (e.g., 2 minutes)
+    const cacheKey = `featured:${country}:${locale || ''}:${limit}:${offset}`
+    const ttlMs = parseInt(process.env.SPOTIFY_FEATURED_TTL_MS || '120000', 10)
+    const cached = getCache(cacheKey)
+    if (cached) {
+      logger.debug('spotify.getFeaturedPlaylists - cache hit', { cacheKey })
+      return cached
+    }
+    const data = await _get('https://api.spotify.com/v1/browse/featured-playlists', params)
+    const mapped = (data.playlists?.items || [])
+      .filter((p) => p && p.id)
+      .map(_mapPlaylistCard)
+      .filter(Boolean)
+    logger.info('spotify.getFeaturedPlaylists - mapped', { count: mapped.length })
+    setCache(cacheKey, mapped, ttlMs)
+    return mapped
+  } catch (err) {
+    const status = err?.response?.status
+    logger.error('spotify.getFeaturedPlaylists - failed', { status, message: err?.message })
+    throw err
+  }
+}
+
 async function search(searchKey, searchType, limit = 20) {
   try {
     logger.debug('spotify.search - start', { searchType, searchKey })
@@ -297,4 +338,5 @@ module.exports = {
   search,
   getCategories,
   probeAuth,
+  getFeaturedPlaylists,
 }

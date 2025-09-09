@@ -27,7 +27,9 @@ export const HomeList = ({ playlists = [], idx, width, id, title, skeleton = fal
         <div className='home-list'>
             <div className='home-list-header'>
                 <h2>{title || 'Category'}</h2>
-                <button onClick={() => navigate(`/Category/${id}`)} className="btn-header">Show all</button>
+                {id !== 'featured' && (
+                  <button onClick={() => navigate(`/Category/${id}`)} className="btn-header">Show all</button>
+                )}
             </div>
             <div className='home-list-grid'>
             {skeleton && Array.from({ length: skeletonCount }).map((_, i) => (

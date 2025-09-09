@@ -37,6 +37,7 @@ const trackRoutes = require('./api/track/track.routes')
 const categoryRoutes = require('./api/category/category.routes')
 const reviewRoutes = require('./api/review/review.routes')
 const healthRoutes = require('./api/health/health.routes')
+const homeRoutes = require('./api/home/home.routes')
 
 const {setupSocketAPI} = require('./services/socket.service')
 const setupAsyncLocalStorage = require('./middlewares/setupAls.middleware')
@@ -53,6 +54,7 @@ app.use('/api/track', trackRoutes)
 app.use('/api/category', categoryRoutes)
 app.use('/api/review', reviewRoutes)
 app.use('/api/health', healthRoutes)
+app.use('/api/home', homeRoutes)
 setupSocketAPI(http)
 
 
