@@ -45,6 +45,11 @@ export const Header = () => {
     }, [])
     const [searchType, setSearchType] = useState('artist')
 
+    // PWA install state
+    const [canInstall, setCanInstall] = useState(false)
+    const deferredPromptRef = useRef(null)
+    const [isStandalone, setIsStandalone] = useState(false)
+
     useEffect(() => {
         EventBus.getInstance().addListener("toggleOpacity",  (data) =>{
             if(data){
@@ -61,6 +66,51 @@ export const Header = () => {
         
         return EventBus.getInstance().removeListener("toggleOpacity")
     },[])
+
+    // Detect PWA install availability and installed state
+    useEffect(() => {
+        const onBeforeInstallPrompt = (e) => {
+            e.preventDefault()
+            deferredPromptRef.current = e
+            setCanInstall(true)
+        }
+        const onAppInstalled = () => {
+            setCanInstall(false)
+            deferredPromptRef.current = null
+        }
+        window.addEventListener('beforeinstallprompt', onBeforeInstallPrompt)
+        window.addEventListener('appinstalled', onAppInstalled)
+
+        // Track display-mode changes (installed/standalone)
+        const mq = window.matchMedia('(display-mode: standalone)')
+        setIsStandalone(mq.matches)
+        const onChange = (e) => {
+            setIsStandalone(e.matches)
+            if (e.matches) setCanInstall(false)
+        }
+        try { mq.addEventListener('change', onChange) } catch { mq.addListener(onChange) }
+
+        return () => {
+            window.removeEventListener('beforeinstallprompt', onBeforeInstallPrompt)
+            window.removeEventListener('appinstalled', onAppInstalled)
+            try { mq.removeEventListener('change', onChange) } catch { mq.removeListener(onChange) }
+        }
+    }, [])
+
+    async function onInstallClick() {
+        try {
+            const promptEvent = deferredPromptRef.current
+            if (!promptEvent) {
+                // Fallback: basic instructions if the browser throttled the prompt or doesn't support it
+                alert('Install via your browser menu: Look for "Install app" or "Add to Home screen" in the menu.')
+                return
+            }
+            promptEvent.prompt()
+            await promptEvent.userChoice
+            deferredPromptRef.current = null
+            setCanInstall(false)
+        } catch (_) { }
+    }
 
     useEffect(() => {
         location.pathname.includes('Playlist')? setIsPlaylist(true) : setIsPlaylist(false)
@@ -142,6 +192,9 @@ export const Header = () => {
                     </div>
                 }
             </section>
+            {!isStandalone && (
+                <button className={'btn-install' + (canInstall ? '' : ' pending')} onClick={onInstallClick} title={canInstall ? 'Install app' : 'Install (use browser menu if disabled)'}>Install app</button>
+            )}
             {currUser.fullname ? 
                 <section className='user-container' onClick={toggleModal}>
                     <img src={currUser.imgUrl} alt="" />

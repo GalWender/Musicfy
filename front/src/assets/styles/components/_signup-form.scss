@@ -64,7 +64,7 @@
 
     @include for-mobile-layout {
         .signup-form {
-            width: 100vw;
+            width: 100%;
             align-content: center;
             align-items: center;
             & label {

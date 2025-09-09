@@ -22,4 +22,30 @@
         padding: 0 32px;
         padding-top: 24px;
     }
+
+    @include for-mobile-layout {
+        .category-header{
+            height: 180px;
+            min-height: 160px;
+            padding: 16px;
+            align-items: center;
+            h1{ font-size: 2rem; }
+        }
+
+        .category-list{
+            display: flex;
+            overflow-x: auto;
+            gap: 12px;
+            padding: 0 16px;
+            padding-top: 16px;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none; /* Firefox hide */
+        }
+        .category-list > * {
+            flex: 0 0 160px;
+            scroll-snap-align: start;
+        }
+        .category-list::-webkit-scrollbar{ display: none; } /* WebKit hide */
+    }
 }

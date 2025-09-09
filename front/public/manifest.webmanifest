@@ -1,0 +1,33 @@
+{
+  "name": "Musicfy",
+  "short_name": "Musicfy",
+  "description": "Stream and manage your music with Musicfy",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#121212",
+  "background_color": "#121212",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/src/assets/img/icons8-spotify-16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/src/assets/img/icons8-spotify-gradient-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/src/assets/img/icons8-spotify-96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ]
+}

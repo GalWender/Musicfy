@@ -13,3 +13,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   </Provider>
 
 )
+
+// Register service worker for PWA (works on production/https or localhost)
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch(() => {})
+  })
+}

@@ -234,16 +234,16 @@
             .btn-heart {
                 margin-inline: 0;
                 padding: 0;
-                margin-right: 50px;
+                margin-right: 12px;
 
                 svg {
-                    height: 30px;
-                    width: 30px;
+                    height: 20px;
+                    width: 20px;
                 }
             }
 
             .track-duration {
-                font-size: 1.3rem;
+                font-size: 1rem;
             }
         }
 
@@ -251,6 +251,17 @@
         .track-date,
         .track-album {
             display: none;
+        }
+
+        // Keep 3-dots menu visible on mobile without adding a grid column width
+        .track-option {
+            display: flex;
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 1; // always visible; no hover on touch
+            pointer-events: auto;
         }
     }
 }

@@ -35,15 +35,17 @@ export const Home = () => {
         getCategories({txt:"HomePage"})
     },[])
 
-    // When live categories arrive or width changes, fetch a few playlists per category for Home rows
+    // When live categories arrive, fetch a few playlists per category for Home rows
+    // Do NOT refetch on window resize to avoid repeated API calls
     useEffect(() => {
         if (!categories || !Array.isArray(categories)) return
         console.log('[Home] live categories', { count: categories.length, sample: categories[0] })
         const pick = categories.slice(0, 6) // show first 6 categories as rows
         ;(async () => {
             try {
-                // Responsive target per row
-                const MIN_PER_ROW = dimensions.width < 975 ? 6 : (dimensions.width < 1500 ? 8 : 10)
+                // Determine target per row once, based on current width
+                const w = (typeof window !== 'undefined') ? window.innerWidth : 1200
+                const MIN_PER_ROW = w < 975 ? 6 : (w < 1500 ? 8 : 10)
                 const rows = await Promise.all(pick.map(async (cat) => {
                     let items = await categoryService.getById(cat.id, cat.name)
                     if (!Array.isArray(items)) items = []
@@ -70,7 +72,7 @@ export const Home = () => {
                 setHomeRows([])
             }
         })()
-    }, [categories, dimensions.width])
+    }, [categories])
     
     const getCategories = (filterBy) => {
         dispatch(setFilterBy(filterBy))

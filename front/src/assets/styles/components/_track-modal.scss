@@ -78,39 +78,243 @@
     }
 
     @include for-mobile-layout {
+        // Full-screen overlay + bottom sheet pattern
         position: fixed;
-        bottom: 0;
-        top: 75vh;
-        z-index: 2;
-        right: 0;
-        left: 0;
-        width: 100vw;
-        & button {
-            height: 80px;
-            span{
-                display: none;
-            }
+        inset: 0;
+        width: 100%; // avoid 100vw to prevent right stripe on scrollbars
+        height: 100dvh; // override base auto
+        max-width: 100%;
+        background: transparent; // let overlay/sheet draw backgrounds
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: stretch;
+        padding-bottom: env(safe-area-inset-bottom);
+        --sheet-pad: 18px;
+        --list-icon-w: 24px;
+        --list-gap: 16px;
+        --label-indent: calc(var(--sheet-pad) + var(--list-icon-w) + var(--list-gap));
+
+        // Dimmed background overlay
+        &::before{
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.6);
+            animation: fade-in 160ms ease-out;
         }
 
-        .modal-list {
+        // Bottom sheet background now drawn by .sheet-content
+        &::after{ content: none; }
+
+        // Ensure children render above the sheet background
+        & > *{
+            position: relative;
+            z-index: 1;
+        }
+
+        // Bottom sheet content area
+        .sheet-content{
             position: fixed;
-            // border: 1px solid white;
-            top: 60vh;
-            bottom: 0;
             left: 0;
             right: 0;
-            width: 100vw;
-            max-height:200px;
-            height: 100%;
-            display: flex;
-            justify-content: end;
+            bottom: 0;
+            background: rgb(40,40,40);
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+            max-height: min(65vh, 420px);
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            padding: 8px 12px calc(12px + env(safe-area-inset-bottom)) 12px;
+            width: 100%;
+            animation: sheet-in 180ms ease-out;
+            box-shadow: 0 -8px 24px rgba(0,0,0,.5);
+        }
 
-            .playlist{
-                font-size:large;
-                text-align: center;
-            }
+        .sheet-handle{
+            width: 36px;
+            height: 4px;
+            border-radius: 999px;
+            background: #666;
+            opacity: .8;
+            margin: 6px auto 8px;
+        }
+
+        .sheet-title{
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+            padding: 6px 12px 12px;
+        }
+
+        .sheet-track{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 8px var(--sheet-pad) 12px var(--sheet-pad); // align with action button left padding
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .sheet-track .art{
+            width: 48px;
+            height: 48px;
+            border-radius: 6px;
+            object-fit: cover;
+        }
+        .sheet-track .meta h3{
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+        .sheet-track .meta p{
+            margin: 0;
+            font-size: .9rem;
+            color: rgba(255,255,255,0.75);
+        }
+
+        .actions{
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        // Add to playlist row spacing and layout
+        .add-btn{
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+
+        // Large tap targets inside the sheet
+        & button {
+            height: 56px;
+            font-size: 1.05rem;
+            text-align: left;
+            background: transparent; // sheet bg from ::after
+            border-radius: 0;
+            padding: 14px var(--sheet-pad);
+            border: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        // Uniform button padding; label alignment handled with an icon spacer for non-icon rows
+        .actions > button{
+            padding: 14px var(--sheet-pad);
+        }
+
+        .actions > button + button:not(.cancel-btn){
+            border-top: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .actions > button:hover{
+            background: rgba(255,255,255,0.06);
+        }
+        .actions > button:active{
+            background: rgba(255,255,255,0.12);
+        }
+
+        .actions > button.add-btn{
+            position: relative;
+            padding-left: var(--sheet-pad);
+            display: grid;
+            grid-template-columns: var(--list-icon-w) var(--list-gap) 1fr;
+            align-items: center;
+        }
+        .add-btn .icon{
+            min-width: var(--list-icon-w);
+            width: var(--list-icon-w);
+            height: var(--list-icon-w);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 var(--list-icon-w);
+            margin: 0; // grid handles spacing
+            grid-column: 1;
+        }
+        .add-btn .label{ grid-column: 3; flex: 1 1 auto; min-width: 0; white-space: nowrap; }
+        .add-btn .icon svg{ width: 100%; height: 100%; display: block; fill: #ffffff; transition: transform .2s ease; }
+        .add-btn.open .icon svg{ transform: rotate(180deg); }
+
+        // Create an empty icon spacer for non-icon rows so labels line up
+        .actions > button:not(.add-btn)::before{
+            content: '';
+            display: inline-block;
+            width: var(--list-icon-w);
+            min-width: var(--list-icon-w);
+            height: var(--list-icon-w);
+            margin-right: var(--list-gap);
+        }
+
+        // Reset base absolute positioning of spans inside buttons for mobile
+        // so grid/flex layout can control placement
+        & button span{
+            display: inline-flex;
+            position: static;
+            top: auto;
+            left: auto;
+        }
+
+        // Playlist list opens inline (no hover on mobile)
+        .modal-list {
+            position: relative;
+            top: auto;
+            bottom: auto;
+            left: auto;
+            right: auto;
+            width: 100%;
+            max-height: 40vh;
+            height: auto;
+            display: none; // hidden by default
+            flex-direction: column;
+            padding: 8px 0 0;
+            background: transparent;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            margin-top: 6px;
+        }
+
+        // Show playlists when Add to playlist is toggled open (handles both descendant and sibling markup)
+        .add-btn.open .modal-list,
+        .add-btn.open + .modal-list{
+            display: flex;
+        }
+
+        .modal-list .playlist{
+            font-size: 1rem;
+            text-align: left;
+            padding: 14px var(--sheet-pad) 14px var(--label-indent); // align with action label column
+            display: flex;
+            align-items: center;
+            height: 48px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .add-btn .label, .actions > button { line-height: 1.2; }
+
+        .cancel-btn{
+            height: 56px;
+            font-weight: 600;
+            text-align: center;
+            width: 100%;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            color: #fff;
+            margin-top: 8px;
         }
     }
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes sheet-in {
+    from { transform: translateY(12px); opacity: .9; }
+    to { transform: translateY(0); opacity: 1; }
+}
 }
 
 .add-btn:hover .modal-list{

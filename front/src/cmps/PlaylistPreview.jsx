@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { createPortal } from 'react-dom'
 import { useNavigate } from "react-router-dom"
 import { useSelector } from 'react-redux'
 import EventBus from 'react-native-event-bus'
@@ -68,8 +69,15 @@ export const PlaylistPreview = ({ track, idx, playTrack, playlistId, handleTrack
 
     function toggleModal(e) {
         e.stopPropagation()
-        if(!isModalOpen)EventBus.getInstance().fireEvent("closeModal")
-        setIsModalOpen(state => state = !state)
+        if (!isModalOpen) {
+            EventBus.getInstance().fireEvent("closeModal")
+            try { EventBus.getInstance().fireEvent('freeze') } catch (_) {}
+            setIsModalOpen(true)
+        } else {
+            try { EventBus.getInstance().fireEvent('unfreeze') } catch (_) {}
+            setIsPlaylistOpen(false)
+            setIsModalOpen(false)
+        }
     }
 
     function handlePlaylistModal(e){
@@ -117,21 +125,43 @@ export const PlaylistPreview = ({ track, idx, playTrack, playlistId, handleTrack
             <section className='track-option' onClick={toggleModal}>
                 {svgIcon({ iconName: 'dots' })}
             </section>
-            {isModalOpen && <section className='track-modal' onClick={(e) => e.stopPropagation()}>
-                <button className='like-btn' onClick={() => handleTrackPrev(isLiked, track)}>
-                    {!isLiked ? 'Add to Liked Songs' : 'Remove from Liked Songs'}
-                </button>
-                {currPlatlistSpotifyId === '1234s' &&
-                    <button className='like-btn' onClick={() => handleRemoveTrack(track.id)}>
-                        Remove track from playlist
-                    </button>
-                }
-                <button className={!isPlaylistOpen?'add-btn': 'add-btn close'} onClick={handlePlaylistModal}>
-                    <span > <svg xmlns="http://www.w3.org/2000/svg" height="12" fill='white' viewBox="0 -960 960 960" width="24"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg> </span>
-                    Add to playlist
-                    <PlaylistModal track={track} />
-                </button>
-            </section>}
+            {isModalOpen && createPortal(
+                (
+                    <section className='track-modal' onClick={() => { setIsModalOpen(false); setIsPlaylistOpen(false); try { EventBus.getInstance().fireEvent('unfreeze') } catch (_) {} }}>
+                        <div className='sheet-content' onClick={(e) => e.stopPropagation()}>
+                            <div className='sheet-handle'></div>
+                            <div className='sheet-track'>
+                                <img className='art' src={track.imgUrl} alt='' />
+                                <div className='meta'>
+                                    <h3>{track.title}</h3>
+                                    <p>{track.artists && track.artists[0]}</p>
+                                </div>
+                            </div>
+                            <div className='actions'>
+                                <button className='like-btn' onClick={() => handleTrackPrev(isLiked, track)}>
+                                    {!isLiked ? 'Add to Liked Songs' : 'Remove from Liked Songs'}
+                                </button>
+                                {currPlatlistSpotifyId === '1234s' && (
+                                    <button className='like-btn' onClick={() => handleRemoveTrack(track.id)}>
+                                        Remove track from playlist
+                                    </button>
+                                )}
+                                <button className={'add-btn' + (isPlaylistOpen ? ' open' : '')} onClick={handlePlaylistModal}>
+                                    <span className='icon'>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                            <path d="M6 9l6 6 6-6" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <span className='label'>Add to playlist</span>
+                                </button>
+                                <PlaylistModal track={track} />
+                                <button className='cancel-btn' onClick={() => { setIsModalOpen(false); setIsPlaylistOpen(false); try { EventBus.getInstance().fireEvent('unfreeze') } catch (_) {} }}>Cancel</button>
+                            </div>
+                        </div>
+                    </section>
+                ),
+                document.body
+            )}
         </section>
     )
 }

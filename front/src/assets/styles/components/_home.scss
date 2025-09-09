@@ -7,6 +7,8 @@
     width: 100%;
 
     @include for-mobile-layout {
-        width: 100vw;
+        width: 100%;
+        padding: 0 16px;
+        padding-top: 16px;
     }
 }

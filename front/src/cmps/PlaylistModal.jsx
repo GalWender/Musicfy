@@ -8,9 +8,8 @@ export const PlaylistModal = ({track}) => {
     const dispatch = useDispatch()
     const userPlaylists = useSelector(state => { return [ ...state.userModule.loggedInUser.playlist ] })
 
-    useEffect(()=>{
-      return EventBus.getInstance().fireEvent("unfreeze")
-    },[])
+    // No-op on mount; sheet open/close controls freeze/unfreeze globally
+    useEffect(()=>{},[])
 
     function HandleTrack(playlistId){
       const idx = userPlaylists.findIndex(playlist => playlist.id === playlistId)

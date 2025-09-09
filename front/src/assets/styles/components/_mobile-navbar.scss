@@ -1,19 +1,20 @@
 .mobile-navbar {
     display: none;
-    height: 3rem;
-    width: 100vw;
+    height: var(--mobile-navbar-height);
+    width: 100%;
     position: fixed;
     bottom: 0;
     background-color: $clr3;
+    z-index: 10;
+    padding-bottom: env(safe-area-inset-bottom);
 
     .btn-nav {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 33.3%;
-        height: 3rem;
+        height: var(--mobile-navbar-height);
     }
-
 
     @include for-mobile-layout {
         display: flex;
