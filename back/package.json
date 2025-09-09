@@ -7,7 +7,7 @@
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
-  "author": "Or Agami, Tal Ben Atiya, Gal Wender",
+  "author": "Gal Wender",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",

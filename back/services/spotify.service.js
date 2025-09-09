@@ -121,6 +121,14 @@ async function _get(url, params = {}) {
         logger.info('spotify._get - success', { url, status: resp.status, durationMs: Date.now() - startedAt })
         return resp.data
       }
+      if (resp.status === 401 && attemptIdx < maxRetries) {
+        // Token might be expired/revoked. Clear cache and retry once.
+        logger.warn('spotify._get - 401 Unauthorized, refreshing token', { url, attempt: attemptIdx + 1 })
+        gAccessToken = null
+        gTokenExpiresAt = 0
+        await sleep(baseDelay)
+        return attempt(attemptIdx + 1)
+      }
       if (resp.status === 429 && attemptIdx < maxRetries) {
         const retryAfterSec = parseInt(resp.headers?.['retry-after'] || '1', 10)
         const wait = Math.max(retryAfterSec * 1000, baseDelay * Math.pow(2, attemptIdx))

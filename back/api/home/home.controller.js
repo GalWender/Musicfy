@@ -4,13 +4,13 @@ const spotifyService = require('../../services/spotify.service')
 async function getFeatured(req, res) {
   const startedAt = Date.now()
   try {
-    const { limit = 18, country = 'US', locale } = req.query || {}
-    const items = await spotifyService.getFeaturedPlaylists({
-      limit: Number(limit) || 18,
-      country,
-      locale,
-    })
-    logger.info('home.featured - success', { count: items?.length || 0, durationMs: Date.now() - startedAt })
+    const { limit = 18 } = req.query || {}
+    // One-call homepage: use a single Spotify search for playlists.
+    // Configurable via HOME_SEARCH_QUERY, defaults to 'Pop'.
+    const query = process.env.HOME_SEARCH_QUERY || 'Pop'
+    logger.debug('home.featured - single search row', { query, limit: Number(limit) || 18 })
+    const items = await spotifyService.search(query, 'playlist', Number(limit) || 18)
+    logger.info('home.featured - success (single search)', { query, count: items?.length || 0, durationMs: Date.now() - startedAt })
     res.send(items)
   } catch (err) {
     const status = err?.response?.status

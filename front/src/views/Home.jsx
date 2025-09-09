@@ -34,7 +34,8 @@ export const Home = () => {
                 setFeatured([{ id: 'featured', title: 'Featured', playlists: items || [] }])
             } catch (err) {
                 console.log('Failed loading featured playlists', err)
-                setFeatured([])
+                // Fallback to a skeleton row so the UI isn't empty
+                setFeatured([{ id: 'featured', title: 'Featured', playlists: [], skeleton: true }])
             }
         })()
     }, [])
@@ -47,7 +48,7 @@ export const Home = () => {
         <div className='home-container'>
             <div ref={containerRef}></div>
             {featured.map((row, idx) => (
-                <HomeList id={row.id} title={row.title} playlists={row.playlists} idx={idx} key={row.id} width={dimensions.width}/>
+                <HomeList id={row.id} title={row.title} playlists={row.playlists} idx={idx} key={row.id} width={dimensions.width} skeleton={!!row.skeleton} skeletonCount={8} />
             ))}
         </div>
     )
