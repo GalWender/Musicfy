@@ -1,5 +1,44 @@
 const axios = require('axios')
+const http = require('http')
+const https = require('https')
 const logger = require('./logger.service')
+
+// Axios instance with Keep-Alive and sane timeout
+const axiosInstance = axios.create({
+  httpAgent: new http.Agent({ keepAlive: true }),
+  httpsAgent: new https.Agent({ keepAlive: true }),
+  timeout: parseInt(process.env.SPOTIFY_HTTP_TIMEOUT_MS || '10000', 10),
+})
+
+// Simple concurrency limiter to avoid burst timeouts
+const MAX_CONCURRENT = parseInt(process.env.SPOTIFY_MAX_CONCURRENT || '4', 10)
+let activeCount = 0
+const queue = []
+function runQueued() {
+  while (activeCount < MAX_CONCURRENT && queue.length) {
+    const job = queue.shift()
+    activeCount++
+    Promise.resolve(job()).finally(() => {
+      activeCount--
+      runQueued()
+    })
+  }
+}
+function withLimit(taskFn) {
+  return new Promise((resolve, reject) => {
+    queue.push(async () => {
+      try {
+        const res = await taskFn()
+        resolve(res)
+      } catch (err) {
+        reject(err)
+      }
+    })
+    process.nextTick(runQueued)
+  })
+}
+
+function sleep(ms) { return new Promise(res => setTimeout(res, ms)) }
 
 let gAccessToken = null
 let gTokenExpiresAt = 0
@@ -18,7 +57,7 @@ async function getAccessToken() {
     const startedAt = Date.now()
     const authHeader = Buffer.from(`${clientId}:${clientSecret}`).toString('base64')
     logger.debug('spotify.getAccessToken - requesting new token')
-    const resp = await axios.post(
+    const resp = await axiosInstance.post(
       'https://accounts.spotify.com/api/token',
       new URLSearchParams({ grant_type: 'client_credentials' }).toString(),
       {
@@ -54,14 +93,52 @@ async function probeAuth() {
 async function _get(url, params = {}) {
   const token = await getAccessToken()
   const startedAt = Date.now()
+  const maxRetries = parseInt(process.env.SPOTIFY_RETRIES || '2', 10)
+  const baseDelay = parseInt(process.env.SPOTIFY_RETRY_BASE_MS || '250', 10)
+
+  async function attempt(attemptIdx) {
+    try {
+      if (attemptIdx === 0) logger.debug('spotify._get - request', { url, params })
+      const resp = await axiosInstance.get(url, {
+        params,
+        headers: { Authorization: `Bearer ${token}` },
+        validateStatus: () => true,
+      })
+      if (resp.status >= 200 && resp.status < 300) {
+        logger.info('spotify._get - success', { url, status: resp.status, durationMs: Date.now() - startedAt })
+        return resp.data
+      }
+      if (resp.status === 429 && attemptIdx < maxRetries) {
+        const retryAfterSec = parseInt(resp.headers?.['retry-after'] || '1', 10)
+        const wait = Math.max(retryAfterSec * 1000, baseDelay * Math.pow(2, attemptIdx))
+        logger.warn('spotify._get - 429 Too Many Requests, retrying', { url, attempt: attemptIdx + 1, wait })
+        await sleep(wait)
+        return attempt(attemptIdx + 1)
+      }
+      if (resp.status >= 500 && attemptIdx < maxRetries) {
+        const wait = baseDelay * Math.pow(2, attemptIdx)
+        logger.warn('spotify._get - server error, retrying', { url, status: resp.status, attempt: attemptIdx + 1, wait })
+        await sleep(wait)
+        return attempt(attemptIdx + 1)
+      }
+      const err = new Error(`Spotify request failed with status ${resp.status}`)
+      err.response = resp
+      throw err
+    } catch (err) {
+      const code = err?.code
+      if ((code === 'ETIMEDOUT' || code === 'ECONNRESET' || code === 'ENOTFOUND') && attemptIdx < maxRetries) {
+        const wait = baseDelay * Math.pow(2, attemptIdx)
+        logger.warn('spotify._get - network error, retrying', { url, code, attempt: attemptIdx + 1, wait })
+        await sleep(wait)
+        return attempt(attemptIdx + 1)
+      }
+      throw err
+    }
+  }
+
   try {
-    logger.debug('spotify._get - request', { url, params })
-    const resp = await axios.get(url, {
-      params,
-      headers: { Authorization: `Bearer ${token}` },
-    })
-    logger.info('spotify._get - success', { url, status: resp.status, durationMs: Date.now() - startedAt })
-    return resp.data
+    const data = await withLimit(() => attempt(0))
+    return data
   } catch (err) {
     const status = err?.response?.status
     const data = err?.response?.data
@@ -155,7 +232,7 @@ async function getPlaylist(playlistId) {
   return mapped
 }
 
-async function getCategoryPlaylists(categoryId, desired = 36, country = 'US') {
+async function getCategoryPlaylists(categoryId, desired = 18, country = 'US') {
   try {
     const pageSize = 20
     logger.debug('spotify.getCategoryPlaylists - start', { categoryId, desired, country })

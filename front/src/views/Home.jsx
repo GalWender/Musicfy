@@ -46,26 +46,32 @@ export const Home = () => {
                 // Determine target per row once, based on current width
                 const w = (typeof window !== 'undefined') ? window.innerWidth : 1200
                 const MIN_PER_ROW = w < 975 ? 6 : (w < 1500 ? 8 : 10)
-                const rows = await Promise.all(pick.map(async (cat) => {
-                    let items = await categoryService.getById(cat.id, cat.name)
-                    if (!Array.isArray(items)) items = []
-                    // If too few items, pad with search results (deduped)
-                    if (items.length < MIN_PER_ROW) {
-                        try {
-                            const extras = await playlistService.getSearchItems(cat.name, 'playlist')
-                            const have = new Set(items.map(p => p.spotifyId || p.id))
-                            const toAdd = (extras || []).filter(e => {
-                                const key = e.spotifyId || e.id
-                                return key && !have.has(key)
-                            }).slice(0, MIN_PER_ROW - items.length)
-                            items = items.concat(toAdd)
-                        } catch (e) {
-                            console.log('[Home] padding search failed', e)
+                const CONCURRENCY = 2
+                const rows = []
+                for (let i = 0; i < pick.length; i += CONCURRENCY) {
+                    const batch = pick.slice(i, i + CONCURRENCY)
+                    const part = await Promise.all(batch.map(async (cat) => {
+                        let items = await categoryService.getById(cat.id, cat.name)
+                        if (!Array.isArray(items)) items = []
+                        // If too few items, pad with search results (deduped)
+                        if (items.length < MIN_PER_ROW) {
+                            try {
+                                const extras = await playlistService.getSearchItems(cat.name, 'playlist')
+                                const have = new Set(items.map(p => p.spotifyId || p.id))
+                                const toAdd = (extras || []).filter(e => {
+                                    const key = e.spotifyId || e.id
+                                    return key && !have.has(key)
+                                }).slice(0, MIN_PER_ROW - items.length)
+                                items = items.concat(toAdd)
+                            } catch (e) {
+                                console.log('[Home] padding search failed', e)
+                            }
                         }
-                    }
-                    console.log('[Home] row', { title: cat.name, id: cat.id, count: items.length, sample: items[0] })
-                    return { id: cat.id, title: cat.name, playlists: items }
-                }))
+                        console.log('[Home] row', { title: cat.name, id: cat.id, count: items.length, sample: items[0] })
+                        return { id: cat.id, title: cat.name, playlists: items }
+                    }))
+                    rows.push(...part)
+                }
                 setHomeRows(rows)
             } catch (err) {
                 console.log('Failed loading home rows', err)
