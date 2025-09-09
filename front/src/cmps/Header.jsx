@@ -193,6 +193,17 @@ export const Header = () => {
             dispatch(searchItems(ev.target.value, searchOption))
         })()
     }
+    
+    function onSearchKeyDown(ev) {
+        if (ev.key === 'Enter') {
+            ev.preventDefault()
+            const value = ev.currentTarget.value.trim()
+            setSearchKey(value)
+            dispatch(searchItems(value, searchOption))
+            // Hide mobile keyboard
+            try { ev.currentTarget.blur() } catch (_) {}
+        }
+    }
    
     function handleSearchOption(option) {
         setSearchOption(option)
@@ -218,7 +229,20 @@ export const Header = () => {
                 { isSearch &&
                     <div className={isFocus?' search-box focus': 'search-box'}>
                         {SvgIcon({iconName: 'search'})}
-                        <textarea cols={1} rows={1} type="text" onInput={handleInput} onFocus={()=>setIsFocus(true)} onBlur={()=>setIsFocus(false)} placeholder='What do you want to listen to?' />
+                        <input
+                            type="text"
+                            inputMode="search"
+                            enterKeyHint="search"
+                            autoComplete="off"
+                            autoCorrect="off"
+                            autoCapitalize="none"
+                            spellCheck={false}
+                            onInput={handleInput}
+                            onKeyDown={onSearchKeyDown}
+                            onFocus={()=>setIsFocus(true)}
+                            onBlur={()=>setIsFocus(false)}
+                            placeholder='What do you want to listen to?'
+                        />
                     </div>
                 }
             </section>

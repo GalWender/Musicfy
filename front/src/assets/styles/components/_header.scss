@@ -83,20 +83,21 @@
             border: 0;
             background-color: rgb(36, 36, 36);
             align-items: center;
+            gap: 8px;
 
-            textarea {
-                border-radius: 25px;
-                border: 0;
-                background-color: rgb(36, 36, 36);
+            input {
+                border: none;
+                background: transparent;
                 flex-grow: 1;
-                padding-inline-start: 5px;
-                font-size: x-small;
+                padding-inline: 6px;
+                font-size: 0.95rem;
                 color: $clr1;
+                -webkit-appearance: none;
+                appearance: none;
             }
 
-            textarea:focus-visible {
-                outline: none;
-            }
+            input:focus-visible { outline: none; }
+            input::placeholder { color: rgba(255,255,255,0.6); }
 
             svg {
                 margin-block-start: 5px;
@@ -116,13 +117,7 @@
 
         }
 
-        .focus {
-            outline: 2px $clr1 solid;
-
-            svg {
-                color: rgba(255, 255, 255)
-            }
-        }
+        .focus { box-shadow: 0 0 0 2px hsla(0,0%,100%,.2); }
 
 
         .btn-play {
@@ -261,7 +256,7 @@
             }
 
             .search-box {
-                textarea {
+                input {
                     overflow: hidden;
                     display: -webkit-box;
                     -webkit-line-clamp: 1;
