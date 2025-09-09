@@ -5,3 +5,4 @@
 /config/dev.js
 /api/auth/secret.js
 .env
+/publicCopy
