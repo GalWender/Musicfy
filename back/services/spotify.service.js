@@ -40,6 +40,17 @@ async function getAccessToken() {
   }
 }
 
+// Lightweight probe to verify Spotify auth works in the current environment
+async function probeAuth() {
+  try {
+    const token = await getAccessToken()
+    return { ok: !!token, expiresAt: gTokenExpiresAt }
+  } catch (err) {
+    // Let caller handle error and log context
+    throw err
+  }
+}
+
 async function _get(url, params = {}) {
   const token = await getAccessToken()
   const startedAt = Date.now()
@@ -208,4 +219,5 @@ module.exports = {
   getCategoryPlaylists,
   search,
   getCategories,
+  probeAuth,
 }

@@ -52,10 +52,15 @@ async function getPlaylist(req, res) {
 async function searchPlaylistsOrTracks(req, res) {
   try {
     const { searchKey, searchType } = req.body
+    const startedAt = Date.now()
+    logger.info('playlist.search - incoming', { searchType, searchKey })
     const items = await spotifyService.search(searchKey, searchType)
+    logger.info('playlist.search - success', { searchType, count: items?.length || 0, durationMs: Date.now() - startedAt })
     res.send(items)
   } catch (err) {
-    logger.error('Failed to perform search', err)
+    const status = err?.response?.status
+    const data = err?.response?.data
+    logger.error('playlist.search - failed', { status, data, message: err?.message })
     res.status(500).send({ err: 'Failed to perform search' })
   }
 }
@@ -64,21 +69,27 @@ async function getCategoryPlaylists(req, res) {
   try {
     const { categoryId } = req.params
     const { name } = req.query || {}
+    const startedAt = Date.now()
+    logger.info('playlist.category - incoming', { categoryId, name })
     const items = await spotifyService.getCategoryPlaylists(categoryId)
     if (!items || items.length === 0) {
       logger.warn('playlist.getCategoryPlaylists - empty, fallback search', { categoryId, name })
       if (name) {
         try {
           const fallback = await spotifyService.search(name, 'playlist')
+          logger.info('playlist.category - fallback search success', { name, count: fallback?.length || 0 })
           return res.send(fallback)
         } catch (e) {
           logger.error('playlist.getCategoryPlaylists - fallback search failed', { categoryId, name, message: e?.message })
         }
       }
     }
+    logger.info('playlist.category - success', { categoryId, count: items?.length || 0, durationMs: Date.now() - startedAt })
     res.send(items)
   } catch (err) {
-    logger.error('Failed to get category playlists', err)
+    const status = err?.response?.status
+    const data = err?.response?.data
+    logger.error('playlist.category - failed', { categoryId: req?.params?.categoryId, status, data, message: err?.message })
     res.status(500).send({ err: 'Failed to get category playlists' })
   }
 }

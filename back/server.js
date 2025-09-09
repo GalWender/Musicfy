@@ -36,6 +36,7 @@ const playlistRoutes = require('./api/playlist/playlist.routes')
 const trackRoutes = require('./api/track/track.routes')
 const categoryRoutes = require('./api/category/category.routes')
 const reviewRoutes = require('./api/review/review.routes')
+const healthRoutes = require('./api/health/health.routes')
 
 const {setupSocketAPI} = require('./services/socket.service')
 const setupAsyncLocalStorage = require('./middlewares/setupAls.middleware')
@@ -51,6 +52,7 @@ app.use('/api/playlist', playlistRoutes)
 app.use('/api/track', trackRoutes)
 app.use('/api/category', categoryRoutes)
 app.use('/api/review', reviewRoutes)
+app.use('/api/health', healthRoutes)
 setupSocketAPI(http)
 
 
